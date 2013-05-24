@@ -32,7 +32,7 @@ DATA={ # cd1: cost_dimension_1, vd1: value_dimension_1
         "tweet2":[{'cd1':12,'vd1':15}],
         "tweet3":[{'cd1':102,'vd1':105}],
         "tweet4":[{'cd1':322,'vd1':150}] }
-INIT_GAMMA={"scale":2.,"shape":2.} # initial Gamma distribution
+INIT_GAMMA={"shape":1.5,"scale":1.5} # initial Gamma distribution
 RESULTS = {}
 # for tweet1: x1,...,x12 <= 10, 10< x13,...,x42<=20,
 #             20 < x43,....x10000 < 200000
@@ -51,10 +51,11 @@ def drawGammaTest( shape, scale ):
                 RESULTS[t] -= 1
 
     ### RESULTS = {"tweet1":1,"tweet2":1,.....}
-    return sum(RESULTS) # 
+    #return sum(RESULTS) # 
 def MCMCitr( steps ):
     for i in [1:MCMCitr]:
-        sh_var = random.random()
-        sc_var = random.random()
-
+        drawGammaTest(INIT_GAMMA['shape'],INIT_GAMMA['scale'])
+        INIT_GAMMA['shape'] += random.random()/5
+        INIT_GAMMA['scale'] += random.random()/5
+        print RESULTS
 
