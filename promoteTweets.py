@@ -15,16 +15,26 @@ import math
 # assume all tweets from the same account and therefore their reach is assumeds to be equal.
 # sample data contains multiple tweets. each tweet can have different number of datapoints.
 METRIC = {"cost_dimension_1":"time_elapsed_since_creation","value_dimension_1":"num_of_retweets"} # FYI
-REACH = 10000 # REACH should be larger and any value_dimension values.
-SAMPLE={ # cd1: cost_dimension_1, vd1: value_dimension_1
+SAMPLE= 1000 # REACH should be larger and any value_dimension values.
+MAXTIME = 2000 # must be greater than the largest cost_dimension value. Use this as sampling threshold
+DATA={ # cd1: cost_dimension_1, vd1: value_dimension_1
         "tweet1":[{'cd1':10,'vd1':12},
                   {'cd1':20,'vd1':42},
                   {'cd1':60,'vd1':72}],
         "tweet2":[{'cd1':12,'vd1':15}],
         "tweet3":[{'cd1':102,'vd1':105}],
         "tweet4":[{'cd1':322,'vd1':150}] }
-
-def estimateLambda(data):
-
+RESULTS = {}
+INIT_GAMMA={"scale":2.,"shape":2.} # initial Gamma distribution
+# for tweet1: x1,...,x12 <= 10, 10< x13,...,x42<=20,
+#             20 < x43,....x10000 < 200000
+# all xi's are iid Gamma. The goal is to estimate Gamma's parameters
+def drawGamma( ):
+    s = np.random.gamma(INIT_GAMMA["scale"], INIT_GAMMA["scale"], SAMPLE)
+    for t in DATA.keys():
+        for row in DATA[t]:
+            cut_off = row['cd1']
+            # count the samples, whose response time is below cut off
+            res = sum([1 if val < cut_off else 0 for val in s ])
 
 
