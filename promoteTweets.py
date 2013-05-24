@@ -12,13 +12,14 @@ import math
 # 1: promote, -1: not to promote, 0: it doesn't know what to do.
 # prediction until t_limit_in_sec (default 200hrs) number of seconds after post
 
-# sample data contains multiple tweets. each tweet can have 
-SAMPLE={"tweet1":[{'time_elapsed':10,'retweets':12},
-                  {'time_elapsed':20,'retweets':42},
-                  {'time_elapsed':60,'retweets':72}],
-        "tweet2":[{'time_elapsed':12,'retweets':15}],
-        "tweet3":[{'time_elapsed':102,'retweets':105}],
-        "tweet4":[{'time_elapsed':322,'retweets':150}] }
+# sample data contains multiple tweets. each tweet can have different number of datapoints.
+SAMPLE={"cost_dimension_1":"time_elapsed","value_dimension_1":"retweets",
+        "tweet1":[{'cd1':10,'vd1':12},
+                  {'cd1':20,'vd1':42},
+                  {'cd1':60,'vd1':72}],
+        "tweet2":[{'cd1':12,'vd1':15}],
+        "tweet3":[{'cd1':102,'vd1':105}],
+        "tweet4":[{'cd1':322,'vd1':150}] }
 REQUIRED_INSIGHT_TYPES = ['post_impressions_organic_unique', 'post_engaged_users']
 
 
