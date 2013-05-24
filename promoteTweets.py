@@ -3,6 +3,7 @@
 # let us assume each user's retweet action is modeled by Gamma
 # and in the situation of lacking data, we for now assume users and homogeneous.
 # A simplified verions of patented MBT algorithm
+# Copyright (c) 2013 All Right Reserved, Voxsup Inc.
 import sys
 import os
 import string
