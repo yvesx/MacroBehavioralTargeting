@@ -5,7 +5,6 @@
 # A simplified verions of patented MBT algorithm
 import sys
 import os
-import MySQLdb
 import string
 import json
 import numpy as np
@@ -16,15 +15,13 @@ import random
 #@@@@@@ TO USERS@@@@@@@@
 #
 #
-# only need to modify SAMPLE, MAXTIME, DATA 
+# only need to modify SAMPLE, DATA,MCMCsteps
 #
 #
 # assume all tweets from the same account and therefore their reach is assumeds to be equal.
 # sample data contains multiple tweets. each tweet can have different number of datapoints.
-METRIC = {"cost_dimension_1":"time_elapsed_since_creation","value_dimension_1":"num_of_retweets"} # FYI
 SAMPLE= 1000 # REACH should be larger and any value_dimension values.
-MAXTIME = 2000 # must be greater than the largest cost_dimension value. Use this as sampling threshold
-MCMCsteps = 30
+MCMCsteps = 300
 DATA={ # cd1: cost_dimension_1, vd1: value_dimension_1
         "tweet1":[{'cd1':10,'vd1':12},
                   {'cd1':20,'vd1':42},
@@ -32,6 +29,7 @@ DATA={ # cd1: cost_dimension_1, vd1: value_dimension_1
         "tweet2":[{'cd1':12,'vd1':15}],
         "tweet3":[{'cd1':102,'vd1':105}],
         "tweet4":[{'cd1':322,'vd1':150}] }
+METRIC = {"cost_dimension_1":"time_elapsed_since_creation","value_dimension_1":"num_of_retweets"} # FYI
 INIT_GAMMA={"shape":1.5,"scale":1.5} # initial Gamma distribution
 RESULTS = {}
 # for tweet1: x1,...,x12 <= 10, 10< x13,...,x42<=20,
@@ -53,9 +51,10 @@ def drawGammaTest( shape, scale ):
     ### RESULTS = {"tweet1":1,"tweet2":1,.....}
     #return sum(RESULTS) # 
 def MCMCitr( steps ):
-    for i in [1:MCMCitr]:
+    for i in xrange(steps):
         drawGammaTest(INIT_GAMMA['shape'],INIT_GAMMA['scale'])
-        INIT_GAMMA['shape'] += random.random()/5
-        INIT_GAMMA['scale'] += random.random()/5
+        INIT_GAMMA['shape'] += random.random()/3
+        INIT_GAMMA['scale'] += random.random()/3
         print RESULTS
 
+MCMCitr(MCMCsteps)
