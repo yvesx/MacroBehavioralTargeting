@@ -14,7 +14,7 @@ import random
 
 #@@@@@@ TO USERS@@@@@@@@
 #
-#
+# $ python ./promoteTweets.py
 # only need to modify SAMPLE, DATA,MCMCsteps,RESULTS
 #
 #
@@ -23,6 +23,8 @@ import random
 
 """
     @@@@@@ sample output. the tweet with highest score is the best to promote. so sort the tweets in descending order
+    result prints the convergence in Gamma parameter space.
+    ONly the final values matter.
     {'tweet3': 1, 'tweet2': 1, 'tweet1': 3, 'tweet4': 1}
     {'tweet3': 11, 'tweet2': 11, 'tweet1': 33, 'tweet4': 11}
     {'tweet3': 21, 'tweet2': 21, 'tweet1': 63, 'tweet4': 21}
