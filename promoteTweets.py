@@ -10,10 +10,10 @@ import json
 import numpy as np
 import math
 # 1: promote, -1: not to promote, 0: it doesn't know what to do.
-# prediction until t_limit_in_sec (default 200hrs) number of seconds after post
 
 # sample data contains multiple tweets. each tweet can have different number of datapoints.
-SAMPLE={"cost_dimension_1":"time_elapsed","value_dimension_1":"retweets",
+METRIC = {"cost_dimension_1":"time_elapsed","value_dimension_1":"retweets"} # FYI
+SAMPLE={
         "tweet1":[{'cd1':10,'vd1':12},
                   {'cd1':20,'vd1':42},
                   {'cd1':60,'vd1':72}],
