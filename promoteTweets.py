@@ -79,19 +79,52 @@ import random
 """
 SAMPLE= 1000 # REACH should be larger and any value_dimension values.
 MCMCsteps = 500
-DATA={ # cd1: cost_dimension_1, vd1: value_dimension_1
-        "tweet1":[{'cd1':10,'vd1':12},
-                  {'cd1':20,'vd1':42},
-                  {'cd1':60,'vd1':72}],
-        "tweet2":[{'cd1':12,'vd1':15}],
-        "tweet3":[{'cd1':102,'vd1':105}],
-        "tweet4":[{'cd1':322,'vd1':150}] }
+DATA={'339824552404217856': [
+        # original input
+        {'vd1': 1, 'cd1': 520539}, 
+        {'vd1': 100, 'cd1': 521439}, 
+        {'vd1': 1, 'cd1': 522339}, 
+        {'vd1': 10000, 'cd1': 523239}, 
+        {'vd1': 1, 'cd1': 591639},
+        # dilute in time by minute
+        {'vd1': 1, 'cd1': 520539/60.0}, 
+        {'vd1': 100, 'cd1': 521439/60.0}, 
+        {'vd1': 1, 'cd1': 522339/60.0}, 
+        {'vd1': 10000, 'cd1': 523239/60.0}, 
+        {'vd1': 1, 'cd1': 591639/60.0},
+        # dilute in time by hour
+        {'vd1': 1, 'cd1': 520539/60.0/60.0}, 
+        {'vd1': 100, 'cd1': 521439/60.0/60.0}, 
+        {'vd1': 1, 'cd1': 522339/60.0/60.0}, 
+        {'vd1': 10000, 'cd1': 523239/60.0/60.0}, 
+        {'vd1': 1, 'cd1': 591639/60.0/60.0}
+    ], 
+        '341995162706259968': [
+        #original input
+        {'vd1': 0, 'cd1': 3025}, 
+        {'vd1': 0, 'cd1': 3925}, 
+        {'vd1': 0, 'cd1': 4825}, 
+        {'vd1': 0, 'cd1': 5725}, 
+        {'vd1': 0, 'cd1': 74125},
+        #dilute by minute
+        {'vd1': 0, 'cd1': 3025/60.0}, 
+        {'vd1': 0, 'cd1': 3925/60.0}, 
+        {'vd1': 0, 'cd1': 4825/60.0}, 
+        {'vd1': 0, 'cd1': 5725/60.0}, 
+        {'vd1': 0, 'cd1': 74125/60.0},
+        # dilute by hour
+        {'vd1': 0, 'cd1': 3025/60.0/60.0}, 
+        {'vd1': 0, 'cd1': 3925/60.0/60.0}, 
+        {'vd1': 0, 'cd1': 4825/60.0/60.0}, 
+        {'vd1': 0, 'cd1': 5725/60.0/60.0}, 
+        {'vd1': 0, 'cd1': 74125/60.0/60.0}
+        ]
+    }
 METRIC = {"cost_dimension_1":"time_elapsed_since_creation","value_dimension_1":"num_of_retweets"} # FYI
 INIT_GAMMA={"shape":2.,"scale":2.} # initial Gamma distribution
-RESULTS = {"tweet1":0,
-           "tweet2":0,
-           "tweet3":0,
-           "tweet4":0}
+RESULTS = {"339824552404217856":0,
+           "341995162706259968":0
+           }
 # for tweet1: x1,...,x12 <= 10, 10< x13,...,x42<=20,
 #             20 < x43,....x10000 < 200000
 # all xi's are iid Gamma. The goal is to estimate Gamma's parameters
@@ -102,7 +135,7 @@ def drawGammaTest( shape, scale ):
             cut_off = row['cd1']
             # count the samples, whose response time is below cut off
             res = sum([1 if val < cut_off else 0 for val in s ])
-            if res >= row['vd1']:
+            if res < row['vd1'] or SAMPLE < row['vd1']:
                 RESULTS[t] += 1 # being greater than means meets or exceeds expectation
             else:
                 RESULTS[t] -= 1
