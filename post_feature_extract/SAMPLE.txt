@@ -1,0 +1,201 @@
+### INPUT
+curl -XPOST http://localhost:1234/sentence_batch -d '[
+	{"unix_stamp":1284101485, 
+		"text":"Yum, Drumsticks! Like if you love peanut butter. Share if you like vanilla peanut butter more. (walmart)"}]'
+
+#### OUTPUT
+# explanation of the fields:
+# exclamation: whether post msg contains !
+# hash_tag: whether post msg contains #someTerm
+# hyper_link: whether post msg contains http://bit.ly/something
+# language: language detection
+# contains_upper_case: whether post msg contains any ENTIRELY UPPERCASE words 
+# negatives: list sentiment-negative unigrams (sad)
+# positives: list sentiment-positive unigrams (happy)
+# negations: list negation unigrams (never)
+# question: whether post msg asks a question
+# POS: Part-Of-Speech tagging by ark-nlp at CMU
+# name_entities: wikification results
+# ask_share: if post message asks fans to Share
+# ask_like: if post message asks fans to like
+# long_text: a post msg is considered long if it is over 140 chars
+# HOD: at which hour the post was made
+# DOW: on which weekday the post was made
+# MOY: in which month the post was mad
+############
+[
+  {
+    "exclamation": 1,
+    "time_since_last_post": 8903,
+    "post_type": "photo",
+    "hash_tag": 0,
+    "HOD": 1,
+    "hyper_link": 0,
+    "contains_upper_case": 0,
+    "language": "en",
+    "MOY": 9,
+    "negatives": [],
+    "question": 0,
+    "POS": [
+      {
+        "word": "Yum",
+        "pos": "!"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "Drumsticks",
+        "pos": "^"
+      },
+      {
+        "word": "!",
+        "pos": ","
+      },
+      {
+        "word": "Like",
+        "pos": "P"
+      },
+      {
+        "word": "if",
+        "pos": "P"
+      },
+      {
+        "word": "you",
+        "pos": "O"
+      },
+      {
+        "word": "love",
+        "pos": "V"
+      },
+      {
+        "word": "peanut",
+        "pos": "A"
+      },
+      {
+        "word": "butter",
+        "pos": "N"
+      },
+      {
+        "word": ".",
+        "pos": ","
+      },
+      {
+        "word": "Share",
+        "pos": "V"
+      },
+      {
+        "word": "if",
+        "pos": "P"
+      },
+      {
+        "word": "you",
+        "pos": "O"
+      },
+      {
+        "word": "like",
+        "pos": "V"
+      },
+      {
+        "word": "vanilla",
+        "pos": "N"
+      },
+      {
+        "word": "peanut",
+        "pos": "N"
+      },
+      {
+        "word": "butter",
+        "pos": "N"
+      },
+      {
+        "word": "more",
+        "pos": "A"
+      },
+      {
+        "word": ".",
+        "pos": ","
+      },
+      {
+        "word": "(",
+        "pos": ","
+      },
+      {
+        "word": "walmart",
+        "pos": "^"
+      },
+      {
+        "word": ")",
+        "pos": ","
+      }
+    ],
+    "name_entities": [
+      {
+        "@support": "31",
+        "@URI": "http://dbpedia.org/resource/Under_the_Yum_Yum_Tree",
+        "@surfaceForm": "yum",
+        "@offset": "0",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.3283892571926117",
+        "@types": ""
+      },
+      {
+        "@support": "32",
+        "@URI": "http://dbpedia.org/resource/Percussion_mallet",
+        "@surfaceForm": "drumsticks",
+        "@offset": "5",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.2482556700706482",
+        "@types": ""
+      },
+      {
+        "@support": "233",
+        "@URI": "http://dbpedia.org/resource/Peanut_butter",
+        "@surfaceForm": "peanut butter",
+        "@offset": "34",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "1.0641151666641235",
+        "@types": ""
+      },
+      {
+        "@support": "547",
+        "@URI": "http://dbpedia.org/resource/Vanilla",
+        "@surfaceForm": "vanilla",
+        "@offset": "67",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.8593834638595581",
+        "@types": ""
+      },
+      {
+        "@support": "233",
+        "@URI": "http://dbpedia.org/resource/Peanut_butter",
+        "@surfaceForm": "peanut butter",
+        "@offset": "75",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "1.0641151666641235",
+        "@types": ""
+      },
+      {
+        "@support": "414",
+        "@URI": "http://dbpedia.org/resource/Walmart",
+        "@surfaceForm": "walmart",
+        "@offset": "96",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.5478489398956299",
+        "@types": ""
+      }
+    ],
+    "ask_share": 1,
+    "ask_like": 1,
+    "long_text": 0,
+    "positives": [
+      "yum",
+      "like",
+      "love",
+      "like"
+    ],
+    "DOW": 5,
+    "negations": []
+  }
+]
