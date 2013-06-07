@@ -5,9 +5,9 @@ class config:
     def __init__(self):
 
         self.debug        = True
-        self.log_critical = '/tmp/scclient_critical'
-        self.log_message  = '/tmp/scclient_message'
-        self.log_debug    = '/tmp/scclient_debug'
+        self.log_critical = '/tmp/pfeclient_critical'
+        self.log_message  = '/tmp/pfeclient_message'
+        self.log_debug    = '/tmp/pfeclient_debug'
 
         #self.dbpedia_api = "http://spotlight.dbpedia.org/rest/annotate/"
         self.dbpedia_api = "http://10.1.1.129:9999/rest/annotate/"
