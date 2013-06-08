@@ -89,16 +89,6 @@ def process( unix_stamp, sentence):
     else:
         hyper_link = 0
 
-    if 'like' in sentence:
-        ask_like = 1
-    else:
-        ask_like = 0
-
-    if 'share' in sentence:
-        ask_share = 1
-    else:
-        ask_share = 0
-
     if len(sentence) > 140:
         long_text = 1
     else:
@@ -111,6 +101,17 @@ def process( unix_stamp, sentence):
     positives = [w for w in array if w in dict_match.pos_word_hash]
     negatives = [w for w in array if w in dict_match.neg_word_hash]
     POS = POS_tag(sentence_orig_case)
+
+    ask_like = 0
+    ask_share = 0
+    for part in POS:
+        if part['pos'] == "V":
+            if part['word'].lower() == "like":
+                ask_like = 1
+            elif part['word'].lower() == "share":
+                ask_share = 1
+
+
     HOD = datetime.fromtimestamp(unix_stamp).hour
     MOY = datetime.fromtimestamp(unix_stamp).month
     DOW = datetime.fromtimestamp(unix_stamp).isoweekday()
