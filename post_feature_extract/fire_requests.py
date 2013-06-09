@@ -80,9 +80,13 @@ def getPosts(fbid):
   for i in xrange(cursor_s.rowcount):
     row = cursor_s.fetchone()
     try:
-      post_message = unicode(row[1], errors='ignore')
+      post_message = row[1].encode('utf-8')
     except:
       post_message = u"unicode error"
+    if row[6] == "NA":
+      post_type = "status"
+    else:
+      post_type = row[6]
     post = { "fb_id": fbid,
              "post_id": row[0],
              "text": post_message,
@@ -90,7 +94,7 @@ def getPosts(fbid):
              "num_of_post_likes": int(row[3]),
              "num_of_comments": int(row[4]),
              "num_of_shares": int(row[5]),
-             "post_type": row[6]
+             "post_type": post_type
             }
     unix_stamps.append(int(row[2]))
     listOfPosts.append(post)
