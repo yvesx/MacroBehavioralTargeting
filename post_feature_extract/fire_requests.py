@@ -58,19 +58,20 @@ def returnListOfFBIDs():
     listOfID[str(row[0])] =  {"fb_name":fb_name , "category":category}
   return listOfID
 
+#assume sorted list
 def findLargestNegative(lst, num):
   lst = [x - num for x in lst]
   lst = [x for x in lst if x < 0]
-  lst.sort()
+  #lst.sort()
   if len(lst) > 0:
     return -lst[-1]
   else:
     return 0
-def getPosts():
+def getPosts(fbid):
   listOfPosts = []
   unix_stamps = []
   query = "SELECT post_id, post_message , UNIX_TIMESTAMP(post_date), num_of_post_likes , num_of_comments , num_of_shares ,\
-                  post_type FROM %s.%s%s LIMIT 50" % (config.db , fb_id , config.suffix)
+                  post_type FROM %s.%s%s LIMIT 50" % (config.db , fbid , config.suffix)
   try:
     cursor_s.execute(query)
   except:
@@ -82,7 +83,7 @@ def getPosts():
       post_message = unicode(row[1], errors='ignore')
     except:
       post_message = u"unicode error"
-    post = { "fb_id": fb_id,
+    post = { "fb_id": fbid,
              "post_id": row[0],
              "text": post_message,
              "unix_stamp": int(row[2]),
@@ -97,22 +98,14 @@ def getPosts():
   # need to get the time_since_last_post variable.
   unix_stamps.sort()
   for post in listOfPosts:
-    post[""]
+    post["time_since_last_post"] = findLargestNegative(unix_stamps,post["unix_stamp"])
   return listOfPosts
 
-listOfAllID=returnListOfFBIDs()
-try:
-  listOfID = {str(sys.argv[2]):listOfAllID[str(sys.argv[2])]}
-except:
-  listOfID=returnListOfFBIDs()
-  
+
+posts = getPosts(fb_id)
 cursor_s.close()
-for ID in listOfID.keys():
-  print listOfID[ID]
-  print ID
-  data = {"fb_id":ID, "index":sys.argv[1]}
-  req=urllib2.Request(config.endpoint, 
-                      json.dumps(data), 
-                      {'Content-Type': 'application/json'} )
-  f = urllib2.urlopen(req)
-  print f.read()
+req=urllib2.Request(config.endpoint, 
+                    json.dumps(posts), 
+                    {'Content-Type': 'application/json'} )
+#f = urllib2.urlopen(req)
+#print f.read()
