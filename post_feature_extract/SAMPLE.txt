@@ -25,37 +25,515 @@ curl -XPOST http://localhost:1234/sentence_batch -d '[
 ############
 [
   {
-    "exclamation": 1,
-    "time_since_last_post": 8903,
-    "post_type": "photo",
+    "text": "Torn between love and loyalty, one woman is about to discover that you don't have to go to war to become a casualty of it...",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [
+      {
+        "@support": "189",
+        "@URI": "http://dbpedia.org/resource/Loyalty",
+        "@surfaceForm": "loyalty",
+        "@offset": "22",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.8123779892921448",
+        "@types": ""
+      },
+      {
+        "@support": "1169",
+        "@URI": "http://dbpedia.org/resource/Casualty_%28TV_series%29",
+        "@surfaceForm": "casualty",
+        "@offset": "107",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "1.0452399253845215",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 6,
+    "DOW": 3,
+    "exclamation": 0,
     "hash_tag": 0,
-    "HOD": 1,
-    "hyper_link": 0,
-    "contains_upper_case": 0,
-    "language": "en",
-    "MOY": 9,
-    "negatives": [],
+    "ask_like": 0,
+    "time_since_last_post": 97972,
     "question": 0,
     "POS": [
       {
-        "word": "Yum",
-        "pos": "!"
+        "word": "Torn",
+        "pos": "V"
+      },
+      {
+        "word": "between",
+        "pos": "P"
+      },
+      {
+        "word": "love",
+        "pos": "N"
+      },
+      {
+        "word": "and",
+        "pos": "&"
+      },
+      {
+        "word": "loyalty",
+        "pos": "N"
       },
       {
         "word": ",",
         "pos": ","
       },
       {
-        "word": "Drumsticks",
+        "word": "one",
+        "pos": "$"
+      },
+      {
+        "word": "woman",
+        "pos": "N"
+      },
+      {
+        "word": "is",
+        "pos": "V"
+      },
+      {
+        "word": "about",
+        "pos": "P"
+      },
+      {
+        "word": "to",
+        "pos": "P"
+      },
+      {
+        "word": "discover",
+        "pos": "V"
+      },
+      {
+        "word": "that",
+        "pos": "P"
+      },
+      {
+        "word": "you",
+        "pos": "O"
+      },
+      {
+        "word": "don't",
+        "pos": "V"
+      },
+      {
+        "word": "have",
+        "pos": "V"
+      },
+      {
+        "word": "to",
+        "pos": "P"
+      },
+      {
+        "word": "go",
+        "pos": "V"
+      },
+      {
+        "word": "to",
+        "pos": "P"
+      },
+      {
+        "word": "war",
+        "pos": "N"
+      },
+      {
+        "word": "to",
+        "pos": "P"
+      },
+      {
+        "word": "become",
+        "pos": "V"
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "casualty",
+        "pos": "N"
+      },
+      {
+        "word": "of",
+        "pos": "P"
+      },
+      {
+        "word": "it",
+        "pos": "O"
+      },
+      {
+        "word": "...",
+        "pos": ","
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1342591016,
+    "HOD": 0,
+    "hyper_link": 0,
+    "post_id": "14408401557_397732770286099",
+    "negatives": [
+      "war",
+      "casualty"
+    ],
+    "positives": [
+      "love",
+      "loyalty"
+    ],
+    "num_of_post_likes": 86,
+    "MOY": 7,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "Chilling and brilliant, today's Daily Deal has been described as \"a taut, sinister tale of erotic obsession\" by Vanity Fair",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [
+      {
+        "@support": "1",
+        "@URI": "http://dbpedia.org/resource/Obsession_%28cuban_hip-hop%29",
+        "@surfaceForm": "obsession",
+        "@offset": "98",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.2751845419406891",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 41,
+    "DOW": 1,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 97580,
+    "question": 0,
+    "POS": [],
+    "long_text": 0,
+    "unix_stamp": 1342493044,
+    "HOD": 21,
+    "hyper_link": 0,
+    "post_id": "14408401557_343045479103020",
+    "negatives": [
+      "taut",
+      "sinister",
+      "obsession",
+      "vanity"
+    ],
+    "positives": [
+      "brilliant",
+      "fair"
+    ],
+    "num_of_post_likes": 77,
+    "MOY": 7,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "Today only, you can get Ally Condie's futuristic fable of love and free will for just $2.99. The choice is yours!",
+    "fb_id": "14408401557",
+    "num_of_shares": 16,
+    "name_entities": [
+      {
+        "@support": "30",
+        "@URI": "http://dbpedia.org/resource/Buddy_Montgomery",
+        "@surfaceForm": "of love",
+        "@offset": "55",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.07721389830112457",
+        "@types": ""
+      },
+      {
+        "@support": "747",
+        "@URI": "http://dbpedia.org/resource/Free_will",
+        "@surfaceForm": "free will",
+        "@offset": "67",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.6603007316589355",
+        "@types": ""
+      },
+      {
+        "@support": "20",
+        "@URI": "http://dbpedia.org/resource/The_Choice_Is_Yours_%28Revisited%29",
+        "@surfaceForm": "choice is yours",
+        "@offset": "97",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.22482231259346008",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 4,
+    "DOW": 7,
+    "exclamation": 1,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 81081,
+    "question": 0,
+    "POS": [
+      {
+        "word": "Today",
+        "pos": "N"
+      },
+      {
+        "word": "only",
+        "pos": "R"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "you",
+        "pos": "O"
+      },
+      {
+        "word": "can",
+        "pos": "V"
+      },
+      {
+        "word": "get",
+        "pos": "V"
+      },
+      {
+        "word": "Ally",
         "pos": "^"
+      },
+      {
+        "word": "Condie's",
+        "pos": "Z"
+      },
+      {
+        "word": "futuristic",
+        "pos": "A"
+      },
+      {
+        "word": "fable",
+        "pos": "N"
+      },
+      {
+        "word": "of",
+        "pos": "P"
+      },
+      {
+        "word": "love",
+        "pos": "N"
+      },
+      {
+        "word": "and",
+        "pos": "&"
+      },
+      {
+        "word": "free",
+        "pos": "A"
+      },
+      {
+        "word": "will",
+        "pos": "V"
+      },
+      {
+        "word": "for",
+        "pos": "P"
+      },
+      {
+        "word": "just",
+        "pos": "R"
+      },
+      {
+        "word": "$2.99",
+        "pos": "$"
+      },
+      {
+        "word": ".",
+        "pos": ","
+      },
+      {
+        "word": "The",
+        "pos": "D"
+      },
+      {
+        "word": "choice",
+        "pos": "N"
+      },
+      {
+        "word": "is",
+        "pos": "V"
+      },
+      {
+        "word": "yours",
+        "pos": "O"
       },
       {
         "word": "!",
         "pos": ","
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1342395464,
+    "HOD": 18,
+    "hyper_link": 0,
+    "post_id": "14408401557_445454182161106",
+    "negatives": [],
+    "positives": [
+      "ally",
+      "futuristic",
+      "love",
+      "free"
+    ],
+    "num_of_post_likes": 94,
+    "MOY": 7,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "Which did you like better: the book or the movie?",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [
+      {
+        "@support": "279",
+        "@URI": "http://dbpedia.org/resource/300_%28film%29",
+        "@surfaceForm": "movie",
+        "@offset": "43",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.769935667514801",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 64,
+    "DOW": 6,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 1,
+    "time_since_last_post": 67363,
+    "question": 0,
+    "POS": [
+      {
+        "word": "Which",
+        "pos": "O"
       },
+      {
+        "word": "did",
+        "pos": "V"
+      },
+      {
+        "word": "you",
+        "pos": "O"
+      },
+      {
+        "word": "like",
+        "pos": "V"
+      },
+      {
+        "word": "better",
+        "pos": "R"
+      },
+      {
+        "word": ":",
+        "pos": ","
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "book",
+        "pos": "N"
+      },
+      {
+        "word": "or",
+        "pos": "&"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "movie",
+        "pos": "N"
+      },
+      {
+        "word": "?",
+        "pos": ","
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1342314383,
+    "HOD": 20,
+    "hyper_link": 0,
+    "post_id": "14408401557_265360700232480",
+    "negatives": [],
+    "positives": [
+      "like",
+      "better"
+    ],
+    "num_of_post_likes": 74,
+    "MOY": 7,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "Like this post if you love a shocking tale full of secrets, lies, and murder.",
+    "fb_id": "14408401557",
+    "num_of_shares": 11,
+    "name_entities": [
+      {
+        "@support": "483",
+        "@URI": "http://dbpedia.org/resource/National_Post",
+        "@surfaceForm": "post",
+        "@offset": "10",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.8241217136383057",
+        "@types": ""
+      },
+      {
+        "@support": "745",
+        "@URI": "http://dbpedia.org/resource/Dave_Matthews_Band",
+        "@surfaceForm": "secrets",
+        "@offset": "51",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.6523932814598083",
+        "@types": ""
+      },
+      {
+        "@support": "45",
+        "@URI": "http://dbpedia.org/resource/Brave_Murder_Day",
+        "@surfaceForm": "murder",
+        "@offset": "70",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.5819804072380066",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 7,
+    "DOW": 6,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 22445,
+    "question": 0,
+    "POS": [
       {
         "word": "Like",
         "pos": "P"
+      },
+      {
+        "word": "this",
+        "pos": "O"
+      },
+      {
+        "word": "post",
+        "pos": "V"
       },
       {
         "word": "if",
@@ -70,11 +548,1920 @@ curl -XPOST http://localhost:1234/sentence_batch -d '[
         "pos": "V"
       },
       {
-        "word": "peanut",
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "shocking",
         "pos": "A"
       },
       {
-        "word": "butter",
+        "word": "tale",
+        "pos": "N"
+      },
+      {
+        "word": "full",
+        "pos": "A"
+      },
+      {
+        "word": "of",
+        "pos": "P"
+      },
+      {
+        "word": "secrets",
+        "pos": "N"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "lies",
+        "pos": "N"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "and",
+        "pos": "&"
+      },
+      {
+        "word": "murder",
+        "pos": "N"
+      },
+      {
+        "word": ".",
+        "pos": ","
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1342247020,
+    "HOD": 1,
+    "hyper_link": 0,
+    "post_id": "14408401557_174176139381079",
+    "negatives": [
+      "shocking",
+      "lies",
+      "murder"
+    ],
+    "positives": [
+      "like",
+      "love"
+    ],
+    "num_of_post_likes": 411,
+    "MOY": 7,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "When was the last time you read something from the late, great Kurt Vonnegut? Today only, you can add 25 of his masterful short stories to your library for just $1.99!",
+    "fb_id": "14408401557",
+    "num_of_shares": 21,
+    "name_entities": [
+      {
+        "@support": "58",
+        "@URI": "http://dbpedia.org/resource/The_Last_Time_%28song%29",
+        "@surfaceForm": "last time",
+        "@offset": "13",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.904567301273346",
+        "@types": ""
+      },
+      {
+        "@support": "660",
+        "@URI": "http://dbpedia.org/resource/Kurt_Vonnegut",
+        "@surfaceForm": "kurt vonnegut",
+        "@offset": "63",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "1.4051053524017334",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 17,
+    "DOW": 5,
+    "exclamation": 1,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 60680,
+    "question": 0,
+    "POS": [
+      {
+        "word": "When",
+        "pos": "R"
+      },
+      {
+        "word": "was",
+        "pos": "V"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "last",
+        "pos": "A"
+      },
+      {
+        "word": "time",
+        "pos": "N"
+      },
+      {
+        "word": "you",
+        "pos": "O"
+      },
+      {
+        "word": "read",
+        "pos": "V"
+      },
+      {
+        "word": "something",
+        "pos": "N"
+      },
+      {
+        "word": "from",
+        "pos": "P"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "late",
+        "pos": "A"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "great",
+        "pos": "A"
+      },
+      {
+        "word": "Kurt",
+        "pos": "^"
+      },
+      {
+        "word": "Vonnegut",
+        "pos": "^"
+      },
+      {
+        "word": "?",
+        "pos": ","
+      },
+      {
+        "word": "Today",
+        "pos": "N"
+      },
+      {
+        "word": "only",
+        "pos": "R"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "you",
+        "pos": "O"
+      },
+      {
+        "word": "can",
+        "pos": "V"
+      },
+      {
+        "word": "add",
+        "pos": "V"
+      },
+      {
+        "word": "25",
+        "pos": "$"
+      },
+      {
+        "word": "of",
+        "pos": "P"
+      },
+      {
+        "word": "his",
+        "pos": "D"
+      },
+      {
+        "word": "masterful",
+        "pos": "A"
+      },
+      {
+        "word": "short",
+        "pos": "A"
+      },
+      {
+        "word": "stories",
+        "pos": "N"
+      },
+      {
+        "word": "to",
+        "pos": "P"
+      },
+      {
+        "word": "your",
+        "pos": "D"
+      },
+      {
+        "word": "library",
+        "pos": "N"
+      },
+      {
+        "word": "for",
+        "pos": "P"
+      },
+      {
+        "word": "just",
+        "pos": "R"
+      },
+      {
+        "word": "$1.99",
+        "pos": "$"
+      },
+      {
+        "word": "!",
+        "pos": ","
+      }
+    ],
+    "long_text": 1,
+    "unix_stamp": 1342224575,
+    "HOD": 19,
+    "hyper_link": 0,
+    "post_id": "14408401557_322334557860585",
+    "negatives": [],
+    "positives": [
+      "great",
+      "masterful"
+    ],
+    "num_of_post_likes": 90,
+    "MOY": 7,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "unicode error",
+    "fb_id": "14408401557",
+    "num_of_shares": 25,
+    "name_entities": [
+      {
+        "@support": "1757",
+        "@URI": "http://dbpedia.org/resource/Unicode",
+        "@surfaceForm": "unicode",
+        "@offset": "0",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.15882804989814758",
+        "@types": ""
+      },
+      {
+        "@support": "3",
+        "@URI": "http://dbpedia.org/resource/Error_%28law%29",
+        "@surfaceForm": "error",
+        "@offset": "8",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "2.9948904514312744",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 14,
+    "DOW": 5,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 184331,
+    "question": 0,
+    "POS": [
+      {
+        "word": "unicode",
+        "pos": "^"
+      },
+      {
+        "word": "error",
+        "pos": "N"
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1342163895,
+    "HOD": 2,
+    "hyper_link": 0,
+    "post_id": "14408401557_448892808466068",
+    "negatives": [
+      "error"
+    ],
+    "positives": [],
+    "num_of_post_likes": 95,
+    "MOY": 7,
+    "contains_upper_case": 0,
+    "language": "unknown",
+    "negations": []
+  },
+  {
+    "text": "unicode error",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [
+      {
+        "@support": "1757",
+        "@URI": "http://dbpedia.org/resource/Unicode",
+        "@surfaceForm": "unicode",
+        "@offset": "0",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.15882804989814758",
+        "@types": ""
+      },
+      {
+        "@support": "3",
+        "@URI": "http://dbpedia.org/resource/Error_%28law%29",
+        "@surfaceForm": "error",
+        "@offset": "8",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "2.9948904514312744",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 14,
+    "DOW": 2,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 169045,
+    "question": 0,
+    "POS": [
+      {
+        "word": "unicode",
+        "pos": "^"
+      },
+      {
+        "word": "error",
+        "pos": "N"
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1341979564,
+    "HOD": 23,
+    "hyper_link": 0,
+    "post_id": "14408401557_446239958740397",
+    "negatives": [
+      "error"
+    ],
+    "positives": [],
+    "num_of_post_likes": 87,
+    "MOY": 7,
+    "contains_upper_case": 0,
+    "language": "unknown",
+    "negations": []
+  },
+  {
+    "text": "Readers are loving \"War Brides,\" currently #5 on the Kindle Best Sellers list. Have you read it yet? What did you think?",
+    "fb_id": "14408401557",
+    "num_of_shares": 13,
+    "name_entities": [
+      {
+        "@support": "27",
+        "@URI": "http://dbpedia.org/resource/War_bride",
+        "@surfaceForm": "war brides",
+        "@offset": "20",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.31912875175476074",
+        "@types": ""
+      },
+      {
+        "@support": "141",
+        "@URI": "http://dbpedia.org/resource/Amazon_Kindle",
+        "@surfaceForm": "kindle",
+        "@offset": "53",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.544303297996521",
+        "@types": ""
+      },
+      {
+        "@support": "62",
+        "@URI": "http://dbpedia.org/resource/A-list",
+        "@surfaceForm": "list",
+        "@offset": "73",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.9109973311424255",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 52,
+    "DOW": 1,
+    "exclamation": 0,
+    "hash_tag": 1,
+    "ask_like": 0,
+    "time_since_last_post": 92252,
+    "question": 1,
+    "POS": [],
+    "long_text": 0,
+    "unix_stamp": 1341810519,
+    "HOD": 0,
+    "hyper_link": 0,
+    "post_id": "14408401557_164099773725117",
+    "negatives": [
+      "war"
+    ],
+    "positives": [
+      "loving",
+      "best"
+    ],
+    "num_of_post_likes": 137,
+    "MOY": 7,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "What's your idea of the perfect beach read?",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [
+      {
+        "@support": "1440",
+        "@URI": "http://dbpedia.org/resource/Beach",
+        "@surfaceForm": "beach",
+        "@offset": "32",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.7576534748077393",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 86,
+    "DOW": 6,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 85635,
+    "question": 1,
+    "POS": [
+      {
+        "word": "What's",
+        "pos": "L"
+      },
+      {
+        "word": "your",
+        "pos": "D"
+      },
+      {
+        "word": "idea",
+        "pos": "N"
+      },
+      {
+        "word": "of",
+        "pos": "P"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "perfect",
+        "pos": "A"
+      },
+      {
+        "word": "beach",
+        "pos": "N"
+      },
+      {
+        "word": "read",
+        "pos": "V"
+      },
+      {
+        "word": "?",
+        "pos": ","
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1341718267,
+    "HOD": 22,
+    "hyper_link": 0,
+    "post_id": "14408401557_391718607556352",
+    "negatives": [],
+    "positives": [
+      "perfect"
+    ],
+    "num_of_post_likes": 75,
+    "MOY": 7,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "What's on your reading list for the weekend? How about including one of our best Kindle Singles?",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [
+      {
+        "@support": "24",
+        "@URI": "http://dbpedia.org/resource/The_Weekend_%28Michael_Gray_song%29",
+        "@surfaceForm": "weekend",
+        "@offset": "36",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.7827324271202087",
+        "@types": ""
+      },
+      {
+        "@support": "10782",
+        "@URI": "http://dbpedia.org/resource/Single_%28music%29",
+        "@surfaceForm": "singles",
+        "@offset": "88",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.8018825650215149",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 80,
+    "DOW": 5,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 10372,
+    "question": 1,
+    "POS": [
+      {
+        "word": "What's",
+        "pos": "L"
+      },
+      {
+        "word": "on",
+        "pos": "P"
+      },
+      {
+        "word": "your",
+        "pos": "D"
+      },
+      {
+        "word": "reading",
+        "pos": "N"
+      },
+      {
+        "word": "list",
+        "pos": "N"
+      },
+      {
+        "word": "for",
+        "pos": "P"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "weekend",
+        "pos": "N"
+      },
+      {
+        "word": "?",
+        "pos": ","
+      },
+      {
+        "word": "How",
+        "pos": "R"
+      },
+      {
+        "word": "about",
+        "pos": "P"
+      },
+      {
+        "word": "including",
+        "pos": "V"
+      },
+      {
+        "word": "one",
+        "pos": "$"
+      },
+      {
+        "word": "of",
+        "pos": "P"
+      },
+      {
+        "word": "our",
+        "pos": "D"
+      },
+      {
+        "word": "best",
+        "pos": "A"
+      },
+      {
+        "word": "Kindle",
+        "pos": "^"
+      },
+      {
+        "word": "Singles",
+        "pos": "N"
+      },
+      {
+        "word": "?",
+        "pos": ","
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1341632632,
+    "HOD": 22,
+    "hyper_link": 0,
+    "post_id": "14408401557_244651132318857",
+    "negatives": [],
+    "positives": [
+      "best"
+    ],
+    "num_of_post_likes": 93,
+    "MOY": 7,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "Shakespeare's classic play of corruption, greed, and murder gets adapted into a contemporary novel with today's Daily Deal!",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [
+      {
+        "@support": "5751",
+        "@URI": "http://dbpedia.org/resource/William_Shakespeare",
+        "@surfaceForm": "shakespeare's",
+        "@offset": "0",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.365929514169693",
+        "@types": ""
+      },
+      {
+        "@support": "1493",
+        "@URI": "http://dbpedia.org/resource/Political_corruption",
+        "@surfaceForm": "corruption",
+        "@offset": "30",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.4023422598838806",
+        "@types": ""
+      },
+      {
+        "@support": "45",
+        "@URI": "http://dbpedia.org/resource/Brave_Murder_Day",
+        "@surfaceForm": "murder",
+        "@offset": "53",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.7389518618583679",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 9,
+    "DOW": 5,
+    "exclamation": 1,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 172816,
+    "question": 0,
+    "POS": [
+      {
+        "word": "Shakespeare's",
+        "pos": "Z"
+      },
+      {
+        "word": "classic",
+        "pos": "N"
+      },
+      {
+        "word": "play",
+        "pos": "N"
+      },
+      {
+        "word": "of",
+        "pos": "P"
+      },
+      {
+        "word": "corruption",
+        "pos": "N"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "greed",
+        "pos": "N"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "and",
+        "pos": "&"
+      },
+      {
+        "word": "murder",
+        "pos": "N"
+      },
+      {
+        "word": "gets",
+        "pos": "V"
+      },
+      {
+        "word": "adapted",
+        "pos": "V"
+      },
+      {
+        "word": "into",
+        "pos": "P"
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "contemporary",
+        "pos": "A"
+      },
+      {
+        "word": "novel",
+        "pos": "N"
+      },
+      {
+        "word": "with",
+        "pos": "P"
+      },
+      {
+        "word": "today's",
+        "pos": "S"
+      },
+      {
+        "word": "Daily",
+        "pos": "^"
+      },
+      {
+        "word": "Deal",
+        "pos": "N"
+      },
+      {
+        "word": "!",
+        "pos": ","
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1341622260,
+    "HOD": 19,
+    "hyper_link": 0,
+    "post_id": "14408401557_336125739800217",
+    "negatives": [
+      "corruption",
+      "greed",
+      "murder"
+    ],
+    "positives": [
+      "classic"
+    ],
+    "num_of_post_likes": 50,
+    "MOY": 7,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "Today's Daily Deal will take you from the cobblestones of Philadelphia to the halls of Britain's Parliament as it tells the story of how freedom was won in America. Happy Independence Day!",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [
+      {
+        "@support": "279",
+        "@URI": "http://dbpedia.org/resource/Cobblestone",
+        "@surfaceForm": "cobblestones",
+        "@offset": "42",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.5874144434928894",
+        "@types": ""
+      },
+      {
+        "@support": "537",
+        "@URI": "http://dbpedia.org/resource/The_Philadelphia_Inquirer",
+        "@surfaceForm": "philadelphia",
+        "@offset": "58",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "1.041267991065979",
+        "@types": ""
+      },
+      {
+        "@support": "22",
+        "@URI": "http://dbpedia.org/resource/Halls,_Tennessee",
+        "@surfaceForm": "halls",
+        "@offset": "78",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.11631365120410919",
+        "@types": ""
+      },
+      {
+        "@support": "3119",
+        "@URI": "http://dbpedia.org/resource/United_Kingdom_of_Great_Britain_and_Ireland",
+        "@surfaceForm": "britain",
+        "@offset": "87",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "1.0533647537231445",
+        "@types": ""
+      },
+      {
+        "@support": "269",
+        "@URI": "http://dbpedia.org/resource/Parliament_%28band%29",
+        "@surfaceForm": "parliament",
+        "@offset": "97",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.9639325737953186",
+        "@types": ""
+      },
+      {
+        "@support": "177",
+        "@URI": "http://dbpedia.org/resource/Political_freedom",
+        "@surfaceForm": "freedom",
+        "@offset": "137",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.8007940053939819",
+        "@types": ""
+      },
+      {
+        "@support": "104",
+        "@URI": "http://dbpedia.org/resource/In_America_%28film%29",
+        "@surfaceForm": "in america",
+        "@offset": "153",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.4609015882015228",
+        "@types": ""
+      },
+      {
+        "@support": "817",
+        "@URI": "http://dbpedia.org/resource/Independence_Day_%28United_States%29",
+        "@surfaceForm": "independence day",
+        "@offset": "171",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.9178864359855652",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 15,
+    "DOW": 3,
+    "exclamation": 1,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 70871,
+    "question": 0,
+    "POS": [
+      {
+        "word": "Today's",
+        "pos": "S"
+      },
+      {
+        "word": "Daily",
+        "pos": "A"
+      },
+      {
+        "word": "Deal",
+        "pos": "N"
+      },
+      {
+        "word": "will",
+        "pos": "V"
+      },
+      {
+        "word": "take",
+        "pos": "V"
+      },
+      {
+        "word": "you",
+        "pos": "O"
+      },
+      {
+        "word": "from",
+        "pos": "P"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "cobblestones",
+        "pos": "N"
+      },
+      {
+        "word": "of",
+        "pos": "P"
+      },
+      {
+        "word": "Philadelphia",
+        "pos": "^"
+      },
+      {
+        "word": "to",
+        "pos": "P"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "halls",
+        "pos": "N"
+      },
+      {
+        "word": "of",
+        "pos": "P"
+      },
+      {
+        "word": "Britain's",
+        "pos": "Z"
+      },
+      {
+        "word": "Parliament",
+        "pos": "N"
+      },
+      {
+        "word": "as",
+        "pos": "P"
+      },
+      {
+        "word": "it",
+        "pos": "O"
+      },
+      {
+        "word": "tells",
+        "pos": "V"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "story",
+        "pos": "N"
+      },
+      {
+        "word": "of",
+        "pos": "P"
+      },
+      {
+        "word": "how",
+        "pos": "R"
+      },
+      {
+        "word": "freedom",
+        "pos": "N"
+      },
+      {
+        "word": "was",
+        "pos": "V"
+      },
+      {
+        "word": "won",
+        "pos": "V"
+      },
+      {
+        "word": "in",
+        "pos": "P"
+      },
+      {
+        "word": "America",
+        "pos": "^"
+      },
+      {
+        "word": ".",
+        "pos": ","
+      },
+      {
+        "word": "Happy",
+        "pos": "A"
+      },
+      {
+        "word": "Independence",
+        "pos": "N"
+      },
+      {
+        "word": "Day",
+        "pos": "N"
+      },
+      {
+        "word": "!",
+        "pos": ","
+      }
+    ],
+    "long_text": 1,
+    "unix_stamp": 1341449444,
+    "HOD": 19,
+    "hyper_link": 0,
+    "post_id": "14408401557_454892174535174",
+    "negatives": [],
+    "positives": [
+      "freedom",
+      "happy"
+    ],
+    "num_of_post_likes": 125,
+    "MOY": 7,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "unicode error",
+    "fb_id": "14408401557",
+    "num_of_shares": 22,
+    "name_entities": [
+      {
+        "@support": "1757",
+        "@URI": "http://dbpedia.org/resource/Unicode",
+        "@surfaceForm": "unicode",
+        "@offset": "0",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.15882804989814758",
+        "@types": ""
+      },
+      {
+        "@support": "3",
+        "@URI": "http://dbpedia.org/resource/Error_%28law%29",
+        "@surfaceForm": "error",
+        "@offset": "8",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "2.9948904514312744",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 16,
+    "DOW": 3,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 15015,
+    "question": 0,
+    "POS": [
+      {
+        "word": "unicode",
+        "pos": "^"
+      },
+      {
+        "word": "error",
+        "pos": "N"
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1341378573,
+    "HOD": 0,
+    "hyper_link": 0,
+    "post_id": "14408401557_260782107364157",
+    "negatives": [
+      "error"
+    ],
+    "positives": [],
+    "num_of_post_likes": 296,
+    "MOY": 7,
+    "contains_upper_case": 0,
+    "language": "unknown",
+    "negations": []
+  },
+  {
+    "text": "unicode error",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [
+      {
+        "@support": "1757",
+        "@URI": "http://dbpedia.org/resource/Unicode",
+        "@surfaceForm": "unicode",
+        "@offset": "0",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.15882804989814758",
+        "@types": ""
+      },
+      {
+        "@support": "3",
+        "@URI": "http://dbpedia.org/resource/Error_%28law%29",
+        "@surfaceForm": "error",
+        "@offset": "8",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "2.9948904514312744",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 11,
+    "DOW": 2,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 100252,
+    "question": 0,
+    "POS": [
+      {
+        "word": "unicode",
+        "pos": "^"
+      },
+      {
+        "word": "error",
+        "pos": "N"
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1341363558,
+    "HOD": 19,
+    "hyper_link": 0,
+    "post_id": "14408401557_127988884008342",
+    "negatives": [
+      "error"
+    ],
+    "positives": [],
+    "num_of_post_likes": 77,
+    "MOY": 7,
+    "contains_upper_case": 0,
+    "language": "unknown",
+    "negations": []
+  },
+  {
+    "text": "2 Million Kindle Fans<br><a href=http://www.facebook.com/photo.php?fbid=10151054903816558&set=a.10151053603506558.483636.14408401557&type=1&relevant_count=18>http://www.facebook.com/photo.php?fbid=10151054903816558&set=a.10151053603506558.483636.14408401557&type=1&relevant_count=18</a>",
+    "fb_id": "14408401557",
+    "num_of_shares": 54,
+    "name_entities": [
+      {
+        "@support": "141",
+        "@URI": "http://dbpedia.org/resource/Amazon_Kindle",
+        "@surfaceForm": "kindle",
+        "@offset": "10",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.24367663264274597",
+        "@types": ""
+      },
+      {
+        "@support": "402",
+        "@URI": "http://dbpedia.org/resource/Fan_%28person%29",
+        "@surfaceForm": "fans",
+        "@offset": "17",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.3216477036476135",
+        "@types": ""
+      },
+      {
+        "@support": "248",
+        "@URI": "http://dbpedia.org/resource/Hypertext_Transfer_Protocol",
+        "@surfaceForm": "http://",
+        "@offset": "33",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.5106812715530396",
+        "@types": ""
+      },
+      {
+        "@support": "3584",
+        "@URI": "http://dbpedia.org/resource/Facebook",
+        "@surfaceForm": "www.facebook.com",
+        "@offset": "40",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.44154077768325806",
+        "@types": ""
+      },
+      {
+        "@support": "1337",
+        "@URI": "http://dbpedia.org/resource/PHP",
+        "@surfaceForm": ".php",
+        "@offset": "62",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.43923038244247437",
+        "@types": ""
+      },
+      {
+        "@support": "150",
+        "@URI": "http://dbpedia.org/resource/Type_theory",
+        "@surfaceForm": "type",
+        "@offset": "133",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.9015436768531799",
+        "@types": ""
+      },
+      {
+        "@support": "248",
+        "@URI": "http://dbpedia.org/resource/Hypertext_Transfer_Protocol",
+        "@surfaceForm": "http://",
+        "@offset": "158",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.5106812715530396",
+        "@types": ""
+      },
+      {
+        "@support": "3584",
+        "@URI": "http://dbpedia.org/resource/Facebook",
+        "@surfaceForm": "www.facebook.com",
+        "@offset": "165",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.44154077768325806",
+        "@types": ""
+      },
+      {
+        "@support": "1337",
+        "@URI": "http://dbpedia.org/resource/PHP",
+        "@surfaceForm": ".php",
+        "@offset": "187",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.43923038244247437",
+        "@types": ""
+      },
+      {
+        "@support": "150",
+        "@URI": "http://dbpedia.org/resource/Type_theory",
+        "@surfaceForm": "type",
+        "@offset": "258",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.9015436768531799",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 103,
+    "DOW": 1,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 54721,
+    "question": 0,
+    "POS": [
+      {
+        "word": "2",
+        "pos": "$"
+      },
+      {
+        "word": "Million",
+        "pos": "^"
+      },
+      {
+        "word": "Kindle",
+        "pos": "^"
+      },
+      {
+        "word": "Fans",
+        "pos": "N"
+      },
+      {
+        "word": "<",
+        "pos": "~"
+      },
+      {
+        "word": "br",
+        "pos": "G"
+      },
+      {
+        "word": ">",
+        "pos": "G"
+      },
+      {
+        "word": "<",
+        "pos": "~"
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "href",
+        "pos": "N"
+      },
+      {
+        "word": "=",
+        "pos": ","
+      },
+      {
+        "word": "http://www.facebook.com/photo.php?fbid=10151054903816558&set=a.10151053603506558.483636.14408401557&type=1&relevant_count=18",
+        "pos": "U"
+      },
+      {
+        "word": ">",
+        "pos": "~"
+      },
+      {
+        "word": "http://www.facebook.com/photo.php?fbid=10151054903816558&set=a.10151053603506558.483636.14408401557&type=1&relevant_count=18",
+        "pos": "U"
+      },
+      {
+        "word": "<",
+        "pos": "~"
+      },
+      {
+        "word": "/a",
+        "pos": "V"
+      },
+      {
+        "word": ">",
+        "pos": "E"
+      }
+    ],
+    "long_text": 1,
+    "unix_stamp": 1341263306,
+    "HOD": 16,
+    "hyper_link": 1,
+    "post_id": "14408401557_10151054910456558",
+    "negatives": [],
+    "positives": [
+      "fans"
+    ],
+    "num_of_post_likes": 1386,
+    "MOY": 7,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "Help us pick our next cover photo: Check out all the great photos in this album and \"Like\" your favorites. The photo with the most likes by Friday, July 6 at 11:59 PDT will become our cover photo for a week! Thanks to everyone who sent in their pictures!",
+    "fb_id": "14408401557",
+    "num_of_shares": 54,
+    "name_entities": [
+      {
+        "@support": "4638",
+        "@URI": "http://dbpedia.org/resource/Cover_version",
+        "@surfaceForm": "cover",
+        "@offset": "22",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.9582486152648926",
+        "@types": ""
+      },
+      {
+        "@support": "17",
+        "@URI": "http://dbpedia.org/resource/Photo_%28French_magazine%29",
+        "@surfaceForm": "photo",
+        "@offset": "28",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.7521389722824097",
+        "@types": ""
+      },
+      {
+        "@support": "13386",
+        "@URI": "http://dbpedia.org/resource/Album",
+        "@surfaceForm": "album",
+        "@offset": "74",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.49934548139572144",
+        "@types": ""
+      },
+      {
+        "@support": "12",
+        "@URI": "http://dbpedia.org/resource/Favorites_%28Crystal_Gayle_album%29",
+        "@surfaceForm": "favorites",
+        "@offset": "96",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.10486984997987747",
+        "@types": ""
+      },
+      {
+        "@support": "7",
+        "@URI": "http://dbpedia.org/resource/Like",
+        "@surfaceForm": "likes",
+        "@offset": "131",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.2621746361255646",
+        "@types": ""
+      },
+      {
+        "@support": "330",
+        "@URI": "http://dbpedia.org/resource/July_6",
+        "@surfaceForm": "july 6",
+        "@offset": "148",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.016181742772459984",
+        "@types": ""
+      },
+      {
+        "@support": "4638",
+        "@URI": "http://dbpedia.org/resource/Cover_version",
+        "@surfaceForm": "cover",
+        "@offset": "184",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.9582486152648926",
+        "@types": ""
+      },
+      {
+        "@support": "17",
+        "@URI": "http://dbpedia.org/resource/Photo_%28French_magazine%29",
+        "@surfaceForm": "photo",
+        "@offset": "190",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.7521389722824097",
+        "@types": ""
+      },
+      {
+        "@support": "602",
+        "@URI": "http://dbpedia.org/resource/Image",
+        "@surfaceForm": "pictures",
+        "@offset": "245",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.4887131452560425",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 103,
+    "DOW": 1,
+    "exclamation": 1,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 14014,
+    "question": 0,
+    "POS": [],
+    "long_text": 1,
+    "unix_stamp": 1341208585,
+    "HOD": 0,
+    "hyper_link": 0,
+    "post_id": "14408401557_10151053647936558",
+    "negatives": [],
+    "positives": [
+      "help",
+      "great",
+      "like",
+      "likes"
+    ],
+    "num_of_post_likes": 1386,
+    "MOY": 7,
+    "contains_upper_case": 1,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "Tell us, where do you fall on the Grisly Meter? Do you like your mysteries to be scary, gritty, or horrid?\n\nExplore Grisly Reads for Summer: http://amzn.to/GrislyReads",
+    "fb_id": "14408401557",
+    "num_of_shares": 14,
+    "name_entities": [
+      {
+        "@support": "6",
+        "@URI": "http://dbpedia.org/resource/Mary_Anne_Atwood",
+        "@surfaceForm": "mysteries",
+        "@offset": "65",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.0339343398809433",
+        "@types": ""
+      },
+      {
+        "@support": "248",
+        "@URI": "http://dbpedia.org/resource/Hypertext_Transfer_Protocol",
+        "@surfaceForm": "http://",
+        "@offset": "141",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.510638952255249",
+        "@types": ""
+      },
+      {
+        "@support": "18",
+        "@URI": "http://dbpedia.org/resource/.to",
+        "@surfaceForm": ".to",
+        "@offset": "152",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.24019652605056763",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 152,
+    "DOW": 7,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 1,
+    "time_since_last_post": 328139,
+    "question": 0,
+    "POS": [
+      {
+        "word": "Tell",
+        "pos": "V"
+      },
+      {
+        "word": "us",
+        "pos": "O"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "where",
+        "pos": "R"
+      },
+      {
+        "word": "do",
+        "pos": "V"
+      },
+      {
+        "word": "you",
+        "pos": "O"
+      },
+      {
+        "word": "fall",
+        "pos": "V"
+      },
+      {
+        "word": "on",
+        "pos": "P"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "Grisly",
+        "pos": "A"
+      },
+      {
+        "word": "Meter",
+        "pos": "N"
+      },
+      {
+        "word": "?",
+        "pos": ","
+      },
+      {
+        "word": "Do",
+        "pos": "V"
+      },
+      {
+        "word": "you",
+        "pos": "O"
+      },
+      {
+        "word": "like",
+        "pos": "V"
+      },
+      {
+        "word": "your",
+        "pos": "D"
+      },
+      {
+        "word": "mysteries",
+        "pos": "N"
+      },
+      {
+        "word": "to",
+        "pos": "P"
+      },
+      {
+        "word": "be",
+        "pos": "V"
+      },
+      {
+        "word": "scary",
+        "pos": "A"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "gritty",
+        "pos": "A"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "or",
+        "pos": "&"
+      },
+      {
+        "word": "horrid",
+        "pos": "A"
+      },
+      {
+        "word": "?",
+        "pos": ","
+      },
+      {
+        "word": "Explore",
+        "pos": "V"
+      },
+      {
+        "word": "Grisly",
+        "pos": "A"
+      },
+      {
+        "word": "Reads",
+        "pos": "V"
+      },
+      {
+        "word": "for",
+        "pos": "P"
+      },
+      {
+        "word": "Summer",
+        "pos": "N"
+      },
+      {
+        "word": ":",
+        "pos": ","
+      },
+      {
+        "word": "http://amzn.to/GrislyReads",
+        "pos": "U"
+      }
+    ],
+    "long_text": 1,
+    "unix_stamp": 1341194571,
+    "HOD": 21,
+    "hyper_link": 1,
+    "post_id": "14408401557_10151053312491558",
+    "negatives": [
+      "fall",
+      "grisly",
+      "scary",
+      "gritty",
+      "horrid",
+      "grisly"
+    ],
+    "positives": [
+      "like"
+    ],
+    "num_of_post_likes": 170,
+    "MOY": 7,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "What's the best book you've read this year (so far)?",
+    "fb_id": "14408401557",
+    "num_of_shares": 56,
+    "name_entities": [],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 1083,
+    "DOW": 4,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 34270,
+    "question": 1,
+    "POS": [
+      {
+        "word": "What's",
+        "pos": "L"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "best",
+        "pos": "A"
+      },
+      {
+        "word": "book",
+        "pos": "N"
+      },
+      {
+        "word": "you've",
+        "pos": "L"
+      },
+      {
+        "word": "read",
+        "pos": "V"
+      },
+      {
+        "word": "this",
+        "pos": "D"
+      },
+      {
+        "word": "year",
+        "pos": "N"
+      },
+      {
+        "word": "(",
+        "pos": ","
+      },
+      {
+        "word": "so",
+        "pos": "R"
+      },
+      {
+        "word": "far)",
+        "pos": "R"
+      },
+      {
+        "word": "?",
+        "pos": ","
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1340866432,
+    "HOD": 1,
+    "hyper_link": 0,
+    "post_id": "14408401557_333734533372703",
+    "negatives": [],
+    "positives": [
+      "best"
+    ],
+    "num_of_post_likes": 288,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "We're loving the photos you're sharing. Keep posting pictures of you and your Kindle to our wall and we'll add them to our official fan photo album. Then you'll be able to vote for your favorite and we'll make one of your photos our cover photo for a week!",
+    "fb_id": "14408401557",
+    "num_of_shares": 1,
+    "name_entities": [
+      {
+        "@support": "788",
+        "@URI": "http://dbpedia.org/resource/Photograph",
+        "@surfaceForm": "photos",
+        "@offset": "17",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.44195541739463806",
+        "@types": ""
+      },
+      {
+        "@support": "23",
+        "@URI": "http://dbpedia.org/resource/Pictures_of_You_%28The_Last_Goodnight_song%29",
+        "@surfaceForm": "pictures of you",
+        "@offset": "53",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.22863543033599854",
+        "@types": ""
+      },
+      {
+        "@support": "125",
+        "@URI": "http://dbpedia.org/resource/Pink_Floyd_The_Wall_%28film%29",
+        "@surfaceForm": "wall",
+        "@offset": "92",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.23170338571071625",
+        "@types": ""
+      },
+      {
+        "@support": "8",
+        "@URI": "http://dbpedia.org/resource/Photograph_album",
+        "@surfaceForm": "photo album",
+        "@offset": "136",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.9504370093345642",
+        "@types": ""
+      },
+      {
+        "@support": "788",
+        "@URI": "http://dbpedia.org/resource/Photograph",
+        "@surfaceForm": "photos",
+        "@offset": "222",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.44195541739463806",
+        "@types": ""
+      },
+      {
+        "@support": "4638",
+        "@URI": "http://dbpedia.org/resource/Cover_version",
+        "@surfaceForm": "cover",
+        "@offset": "233",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.28586113452911377",
+        "@types": ""
+      },
+      {
+        "@support": "788",
+        "@URI": "http://dbpedia.org/resource/Photograph",
+        "@surfaceForm": "photo",
+        "@offset": "239",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.44195541739463806",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 17,
+    "DOW": 3,
+    "exclamation": 1,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 74202,
+    "question": 0,
+    "POS": [
+      {
+        "word": "We're",
+        "pos": "L"
+      },
+      {
+        "word": "loving",
+        "pos": "V"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "photos",
+        "pos": "N"
+      },
+      {
+        "word": "you're",
+        "pos": "L"
+      },
+      {
+        "word": "sharing",
+        "pos": "V"
+      },
+      {
+        "word": ".",
+        "pos": ","
+      },
+      {
+        "word": "Keep",
+        "pos": "V"
+      },
+      {
+        "word": "posting",
+        "pos": "V"
+      },
+      {
+        "word": "pictures",
+        "pos": "N"
+      },
+      {
+        "word": "of",
+        "pos": "P"
+      },
+      {
+        "word": "you",
+        "pos": "O"
+      },
+      {
+        "word": "and",
+        "pos": "&"
+      },
+      {
+        "word": "your",
+        "pos": "D"
+      },
+      {
+        "word": "Kindle",
+        "pos": "N"
+      },
+      {
+        "word": "to",
+        "pos": "P"
+      },
+      {
+        "word": "our",
+        "pos": "D"
+      },
+      {
+        "word": "wall",
+        "pos": "N"
+      },
+      {
+        "word": "and",
+        "pos": "&"
+      },
+      {
+        "word": "we'll",
+        "pos": "L"
+      },
+      {
+        "word": "add",
+        "pos": "V"
+      },
+      {
+        "word": "them",
+        "pos": "O"
+      },
+      {
+        "word": "to",
+        "pos": "P"
+      },
+      {
+        "word": "our",
+        "pos": "D"
+      },
+      {
+        "word": "official",
+        "pos": "A"
+      },
+      {
+        "word": "fan",
+        "pos": "N"
+      },
+      {
+        "word": "photo",
+        "pos": "N"
+      },
+      {
+        "word": "album",
         "pos": "N"
       },
       {
@@ -82,7 +2469,928 @@ curl -XPOST http://localhost:1234/sentence_batch -d '[
         "pos": ","
       },
       {
-        "word": "Share",
+        "word": "Then",
+        "pos": "R"
+      },
+      {
+        "word": "you'll",
+        "pos": "L"
+      },
+      {
+        "word": "be",
+        "pos": "V"
+      },
+      {
+        "word": "able",
+        "pos": "A"
+      },
+      {
+        "word": "to",
+        "pos": "P"
+      },
+      {
+        "word": "vote",
+        "pos": "V"
+      },
+      {
+        "word": "for",
+        "pos": "P"
+      },
+      {
+        "word": "your",
+        "pos": "D"
+      },
+      {
+        "word": "favorite",
+        "pos": "A"
+      },
+      {
+        "word": "and",
+        "pos": "&"
+      },
+      {
+        "word": "we'll",
+        "pos": "L"
+      },
+      {
+        "word": "make",
+        "pos": "V"
+      },
+      {
+        "word": "one",
+        "pos": "$"
+      },
+      {
+        "word": "of",
+        "pos": "P"
+      },
+      {
+        "word": "your",
+        "pos": "D"
+      },
+      {
+        "word": "photos",
+        "pos": "N"
+      },
+      {
+        "word": "our",
+        "pos": "D"
+      },
+      {
+        "word": "cover",
+        "pos": "N"
+      },
+      {
+        "word": "photo",
+        "pos": "N"
+      },
+      {
+        "word": "for",
+        "pos": "P"
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "week",
+        "pos": "N"
+      },
+      {
+        "word": "!",
+        "pos": ","
+      }
+    ],
+    "long_text": 1,
+    "unix_stamp": 1340832162,
+    "HOD": 16,
+    "hyper_link": 0,
+    "post_id": "14408401557_10151044763886558",
+    "negatives": [],
+    "positives": [
+      "loving",
+      "fan",
+      "favorite"
+    ],
+    "num_of_post_likes": 104,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "Help us celebrate reaching 2 million fans by sharing a photo of you and your Kindle on our wall. We'll put together an album of your submissions. The photo in our album that gets the most likes will become our cover photo for a week! We'll start things off with a photo of our own...",
+    "fb_id": "14408401557",
+    "num_of_shares": 38,
+    "name_entities": [
+      {
+        "@support": "402",
+        "@URI": "http://dbpedia.org/resource/Fan_%28person%29",
+        "@surfaceForm": "fans",
+        "@offset": "37",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.5648312568664551",
+        "@types": ""
+      },
+      {
+        "@support": "63",
+        "@URI": "http://dbpedia.org/resource/Nathaniel_Wallich",
+        "@surfaceForm": "wall.",
+        "@offset": "91",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.013332165777683258",
+        "@types": ""
+      },
+      {
+        "@support": "13386",
+        "@URI": "http://dbpedia.org/resource/Album",
+        "@surfaceForm": "album",
+        "@offset": "163",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "1.2820543050765991",
+        "@types": ""
+      },
+      {
+        "@support": "4638",
+        "@URI": "http://dbpedia.org/resource/Cover_version",
+        "@surfaceForm": "cover",
+        "@offset": "210",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.8794740438461304",
+        "@types": ""
+      },
+      {
+        "@support": "3",
+        "@URI": "http://dbpedia.org/resource/Photo_%28song%29",
+        "@surfaceForm": "photo",
+        "@offset": "216",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.6243087649345398",
+        "@types": ""
+      },
+      {
+        "@support": "3",
+        "@URI": "http://dbpedia.org/resource/Week%21",
+        "@surfaceForm": "week!",
+        "@offset": "228",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.10759931057691574",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 87,
+    "DOW": 2,
+    "exclamation": 1,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 84748,
+    "question": 0,
+    "POS": [
+      {
+        "word": "Help",
+        "pos": "V"
+      },
+      {
+        "word": "us",
+        "pos": "O"
+      },
+      {
+        "word": "celebrate",
+        "pos": "V"
+      },
+      {
+        "word": "reaching",
+        "pos": "V"
+      },
+      {
+        "word": "2",
+        "pos": "$"
+      },
+      {
+        "word": "million",
+        "pos": "$"
+      },
+      {
+        "word": "fans",
+        "pos": "N"
+      },
+      {
+        "word": "by",
+        "pos": "P"
+      },
+      {
+        "word": "sharing",
+        "pos": "V"
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "photo",
+        "pos": "N"
+      },
+      {
+        "word": "of",
+        "pos": "P"
+      },
+      {
+        "word": "you",
+        "pos": "O"
+      },
+      {
+        "word": "and",
+        "pos": "&"
+      },
+      {
+        "word": "your",
+        "pos": "D"
+      },
+      {
+        "word": "Kindle",
+        "pos": "N"
+      },
+      {
+        "word": "on",
+        "pos": "P"
+      },
+      {
+        "word": "our",
+        "pos": "D"
+      },
+      {
+        "word": "wall",
+        "pos": "N"
+      },
+      {
+        "word": ".",
+        "pos": ","
+      },
+      {
+        "word": "We'll",
+        "pos": "L"
+      },
+      {
+        "word": "put",
+        "pos": "V"
+      },
+      {
+        "word": "together",
+        "pos": "R"
+      },
+      {
+        "word": "an",
+        "pos": "D"
+      },
+      {
+        "word": "album",
+        "pos": "N"
+      },
+      {
+        "word": "of",
+        "pos": "P"
+      },
+      {
+        "word": "your",
+        "pos": "D"
+      },
+      {
+        "word": "submissions",
+        "pos": "N"
+      },
+      {
+        "word": ".",
+        "pos": ","
+      },
+      {
+        "word": "The",
+        "pos": "D"
+      },
+      {
+        "word": "photo",
+        "pos": "N"
+      },
+      {
+        "word": "in",
+        "pos": "P"
+      },
+      {
+        "word": "our",
+        "pos": "D"
+      },
+      {
+        "word": "album",
+        "pos": "N"
+      },
+      {
+        "word": "that",
+        "pos": "P"
+      },
+      {
+        "word": "gets",
+        "pos": "V"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "most",
+        "pos": "R"
+      },
+      {
+        "word": "likes",
+        "pos": "V"
+      },
+      {
+        "word": "will",
+        "pos": "V"
+      },
+      {
+        "word": "become",
+        "pos": "V"
+      },
+      {
+        "word": "our",
+        "pos": "D"
+      },
+      {
+        "word": "cover",
+        "pos": "N"
+      },
+      {
+        "word": "photo",
+        "pos": "N"
+      },
+      {
+        "word": "for",
+        "pos": "P"
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "week",
+        "pos": "N"
+      },
+      {
+        "word": "!",
+        "pos": ","
+      },
+      {
+        "word": "We'll",
+        "pos": "L"
+      },
+      {
+        "word": "start",
+        "pos": "V"
+      },
+      {
+        "word": "things",
+        "pos": "N"
+      },
+      {
+        "word": "off",
+        "pos": "P"
+      },
+      {
+        "word": "with",
+        "pos": "P"
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "photo",
+        "pos": "N"
+      },
+      {
+        "word": "of",
+        "pos": "P"
+      },
+      {
+        "word": "our",
+        "pos": "D"
+      },
+      {
+        "word": "own",
+        "pos": "A"
+      },
+      {
+        "word": "...",
+        "pos": ","
+      }
+    ],
+    "long_text": 1,
+    "unix_stamp": 1340757960,
+    "HOD": 19,
+    "hyper_link": 0,
+    "post_id": "14408401557_10151042831756558",
+    "negatives": [],
+    "positives": [
+      "help",
+      "celebrate",
+      "fans",
+      "likes"
+    ],
+    "num_of_post_likes": 473,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "2 million fans! Thank you for helping us build such a strong and vibrant community on Facebook!",
+    "fb_id": "14408401557",
+    "num_of_shares": 1,
+    "name_entities": [
+      {
+        "@support": "402",
+        "@URI": "http://dbpedia.org/resource/Fan_%28person%29",
+        "@surfaceForm": "fans",
+        "@offset": "10",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.6552382707595825",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 83,
+    "DOW": 1,
+    "exclamation": 1,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 67437,
+    "question": 0,
+    "POS": [
+      {
+        "word": "2",
+        "pos": "$"
+      },
+      {
+        "word": "million",
+        "pos": "$"
+      },
+      {
+        "word": "fans",
+        "pos": "N"
+      },
+      {
+        "word": "!",
+        "pos": ","
+      },
+      {
+        "word": "Thank",
+        "pos": "V"
+      },
+      {
+        "word": "you",
+        "pos": "O"
+      },
+      {
+        "word": "for",
+        "pos": "P"
+      },
+      {
+        "word": "helping",
+        "pos": "V"
+      },
+      {
+        "word": "us",
+        "pos": "O"
+      },
+      {
+        "word": "build",
+        "pos": "V"
+      },
+      {
+        "word": "such",
+        "pos": "A"
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "strong",
+        "pos": "A"
+      },
+      {
+        "word": "and",
+        "pos": "&"
+      },
+      {
+        "word": "vibrant",
+        "pos": "A"
+      },
+      {
+        "word": "community",
+        "pos": "N"
+      },
+      {
+        "word": "on",
+        "pos": "P"
+      },
+      {
+        "word": "Facebook",
+        "pos": "^"
+      },
+      {
+        "word": "!",
+        "pos": ","
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1340673212,
+    "HOD": 20,
+    "hyper_link": 0,
+    "post_id": "14408401557_10151040705186558",
+    "negatives": [],
+    "positives": [
+      "fans",
+      "thank",
+      "helping",
+      "strong",
+      "vibrant"
+    ],
+    "num_of_post_likes": 1826,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "Hollywood actor Max Conroy saves lives in the movies, but can he save his own life in the real world? Find out in this smart new thriller... Lights, camera, action!",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [
+      {
+        "@support": "6798",
+        "@URI": "http://dbpedia.org/resource/Hollywood",
+        "@surfaceForm": "hollywood",
+        "@offset": "0",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "1.7076448202133179",
+        "@types": ""
+      },
+      {
+        "@support": "196",
+        "@URI": "http://dbpedia.org/resource/Screen_Actors_Guild_Award",
+        "@surfaceForm": "actor",
+        "@offset": "10",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "1.2308199405670166",
+        "@types": ""
+      },
+      {
+        "@support": "151",
+        "@URI": "http://dbpedia.org/resource/Max_Payne",
+        "@surfaceForm": "max",
+        "@offset": "16",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "1.3409948348999023",
+        "@types": ""
+      },
+      {
+        "@support": "121",
+        "@URI": "http://dbpedia.org/resource/Frances_Conroy",
+        "@surfaceForm": "conroy",
+        "@offset": "20",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "1.0402765274047852",
+        "@types": ""
+      },
+      {
+        "@support": "636",
+        "@URI": "http://dbpedia.org/resource/1950_in_film",
+        "@surfaceForm": "in the movies",
+        "@offset": "39",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "1.1430366039276123",
+        "@types": ""
+      },
+      {
+        "@support": "14",
+        "@URI": "http://dbpedia.org/resource/The_Real_World%3F",
+        "@surfaceForm": "real world?",
+        "@offset": "90",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.537109375",
+        "@types": ""
+      },
+      {
+        "@support": "20",
+        "@URI": "http://dbpedia.org/resource/Lights,_Camera,_Action%21",
+        "@surfaceForm": "lights, camera, action!",
+        "@offset": "141",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.5417664647102356",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 2,
+    "DOW": 1,
+    "exclamation": 1,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 29446,
+    "question": 0,
+    "POS": [
+      {
+        "word": "Hollywood",
+        "pos": "^"
+      },
+      {
+        "word": "actor",
+        "pos": "N"
+      },
+      {
+        "word": "Max",
+        "pos": "^"
+      },
+      {
+        "word": "Conroy",
+        "pos": "^"
+      },
+      {
+        "word": "saves",
+        "pos": "V"
+      },
+      {
+        "word": "lives",
+        "pos": "V"
+      },
+      {
+        "word": "in",
+        "pos": "P"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "movies",
+        "pos": "N"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "but",
+        "pos": "&"
+      },
+      {
+        "word": "can",
+        "pos": "V"
+      },
+      {
+        "word": "he",
+        "pos": "O"
+      },
+      {
+        "word": "save",
+        "pos": "V"
+      },
+      {
+        "word": "his",
+        "pos": "D"
+      },
+      {
+        "word": "own",
+        "pos": "A"
+      },
+      {
+        "word": "life",
+        "pos": "N"
+      },
+      {
+        "word": "in",
+        "pos": "P"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "real",
+        "pos": "A"
+      },
+      {
+        "word": "world",
+        "pos": "N"
+      },
+      {
+        "word": "?",
+        "pos": ","
+      },
+      {
+        "word": "Find",
+        "pos": "V"
+      },
+      {
+        "word": "out",
+        "pos": "T"
+      },
+      {
+        "word": "in",
+        "pos": "P"
+      },
+      {
+        "word": "this",
+        "pos": "D"
+      },
+      {
+        "word": "smart",
+        "pos": "A"
+      },
+      {
+        "word": "new",
+        "pos": "A"
+      },
+      {
+        "word": "thriller",
+        "pos": "N"
+      },
+      {
+        "word": "...",
+        "pos": ","
+      },
+      {
+        "word": "Lights",
+        "pos": "N"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "camera",
+        "pos": "N"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "action",
+        "pos": "N"
+      },
+      {
+        "word": "!",
+        "pos": ","
+      }
+    ],
+    "long_text": 1,
+    "unix_stamp": 1340605775,
+    "HOD": 1,
+    "hyper_link": 0,
+    "post_id": "14408401557_384126444975488",
+    "negatives": [],
+    "positives": [
+      "smart"
+    ],
+    "num_of_post_likes": 50,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "What do you do with Kindle when you're not reading?",
+    "fb_id": "14408401557",
+    "num_of_shares": 1,
+    "name_entities": [],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 84,
+    "DOW": 7,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 60966,
+    "question": 1,
+    "POS": [
+      {
+        "word": "What",
+        "pos": "O"
+      },
+      {
+        "word": "do",
+        "pos": "V"
+      },
+      {
+        "word": "you",
+        "pos": "O"
+      },
+      {
+        "word": "do",
+        "pos": "V"
+      },
+      {
+        "word": "with",
+        "pos": "P"
+      },
+      {
+        "word": "Kindle",
+        "pos": "^"
+      },
+      {
+        "word": "when",
+        "pos": "R"
+      },
+      {
+        "word": "you're",
+        "pos": "L"
+      },
+      {
+        "word": "not",
+        "pos": "R"
+      },
+      {
+        "word": "reading",
+        "pos": "V"
+      },
+      {
+        "word": "?",
+        "pos": ","
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1340576329,
+    "HOD": 17,
+    "hyper_link": 0,
+    "post_id": "14408401557_489961961019950",
+    "negatives": [],
+    "positives": [],
+    "num_of_post_likes": 116,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": [
+      "not"
+    ]
+  },
+  {
+    "text": "Like this post if you aren't afraid to admit that you love romantic urban fantasy... and then prepare to enter a a world of secrecy, love, and shape-shifting panthers!",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [
+      {
+        "@support": "3233",
+        "@URI": "http://dbpedia.org/resource/The_Washington_Post",
+        "@surfaceForm": "post",
+        "@offset": "10",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.5346053838729858",
+        "@types": ""
+      },
+      {
+        "@support": "132",
+        "@URI": "http://dbpedia.org/resource/Urban_fantasy",
+        "@surfaceForm": "urban fantasy",
+        "@offset": "68",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.5089098215103149",
+        "@types": ""
+      },
+      {
+        "@support": "69",
+        "@URI": "http://dbpedia.org/resource/Secrecy",
+        "@surfaceForm": "secrecy",
+        "@offset": "124",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.2749977707862854",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 8,
+    "DOW": 7,
+    "exclamation": 1,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 15843,
+    "question": 0,
+    "POS": [
+      {
+        "word": "Like",
+        "pos": "P"
+      },
+      {
+        "word": "this",
+        "pos": "O"
+      },
+      {
+        "word": "post",
         "pos": "V"
       },
       {
@@ -94,27 +3402,1084 @@ curl -XPOST http://localhost:1234/sentence_batch -d '[
         "pos": "O"
       },
       {
-        "word": "like",
+        "word": "aren't",
         "pos": "V"
       },
       {
-        "word": "vanilla",
+        "word": "afraid",
+        "pos": "A"
+      },
+      {
+        "word": "to",
+        "pos": "P"
+      },
+      {
+        "word": "admit",
+        "pos": "V"
+      },
+      {
+        "word": "that",
+        "pos": "P"
+      },
+      {
+        "word": "you",
+        "pos": "O"
+      },
+      {
+        "word": "love",
+        "pos": "V"
+      },
+      {
+        "word": "romantic",
+        "pos": "A"
+      },
+      {
+        "word": "urban",
+        "pos": "A"
+      },
+      {
+        "word": "fantasy",
         "pos": "N"
       },
       {
-        "word": "peanut",
+        "word": "...",
+        "pos": ","
+      },
+      {
+        "word": "and",
+        "pos": "&"
+      },
+      {
+        "word": "then",
+        "pos": "R"
+      },
+      {
+        "word": "prepare",
+        "pos": "V"
+      },
+      {
+        "word": "to",
+        "pos": "P"
+      },
+      {
+        "word": "enter",
+        "pos": "V"
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "world",
         "pos": "N"
       },
       {
-        "word": "butter",
+        "word": "of",
+        "pos": "P"
+      },
+      {
+        "word": "secrecy",
         "pos": "N"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "love",
+        "pos": "N"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "and",
+        "pos": "&"
+      },
+      {
+        "word": "shape-shifting",
+        "pos": "N"
+      },
+      {
+        "word": "panthers",
+        "pos": "N"
+      },
+      {
+        "word": "!",
+        "pos": ","
+      }
+    ],
+    "long_text": 1,
+    "unix_stamp": 1340515363,
+    "HOD": 0,
+    "hyper_link": 0,
+    "post_id": "14408401557_250652441712301",
+    "negatives": [
+      "afraid"
+    ],
+    "positives": [
+      "like",
+      "love",
+      "romantic",
+      "love"
+    ],
+    "num_of_post_likes": 355,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "This month's editors' picks include richly imagined debut novels, riveting investigative journalism, and spine-tingling thrillers, as well as more new fiction and nonfiction. http://amzn.to/MKQDxB",
+    "fb_id": "14408401557",
+    "num_of_shares": 19,
+    "name_entities": [
+      {
+        "@support": "19",
+        "@URI": "http://dbpedia.org/resource/Editors_%28band%29",
+        "@surfaceForm": "editors",
+        "@offset": "13",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.1602950394153595",
+        "@types": ""
+      },
+      {
+        "@support": "6",
+        "@URI": "http://dbpedia.org/resource/The_Picks",
+        "@surfaceForm": "picks",
+        "@offset": "22",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.05295056104660034",
+        "@types": ""
+      },
+      {
+        "@support": "539",
+        "@URI": "http://dbpedia.org/resource/Debut_novel",
+        "@surfaceForm": "debut",
+        "@offset": "52",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "1.3151686191558838",
+        "@types": ""
+      },
+      {
+        "@support": "7929",
+        "@URI": "http://dbpedia.org/resource/Novel",
+        "@surfaceForm": "novels",
+        "@offset": "58",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.7778299450874329",
+        "@types": ""
+      },
+      {
+        "@support": "389",
+        "@URI": "http://dbpedia.org/resource/Investigative_journalism",
+        "@surfaceForm": "investigative journalism",
+        "@offset": "75",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.6021031141281128",
+        "@types": ""
+      },
+      {
+        "@support": "937",
+        "@URI": "http://dbpedia.org/resource/Non-fiction",
+        "@surfaceForm": "nonfiction",
+        "@offset": "163",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.9691261649131775",
+        "@types": ""
+      },
+      {
+        "@support": "248",
+        "@URI": "http://dbpedia.org/resource/Hypertext_Transfer_Protocol",
+        "@surfaceForm": "http://",
+        "@offset": "175",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.25379669666290283",
+        "@types": ""
+      },
+      {
+        "@support": "18",
+        "@URI": "http://dbpedia.org/resource/.to",
+        "@surfaceForm": ".to",
+        "@offset": "186",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.031170697882771492",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 15,
+    "DOW": 6,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 82475,
+    "question": 0,
+    "POS": [
+      {
+        "word": "This",
+        "pos": "D"
+      },
+      {
+        "word": "month's",
+        "pos": "S"
+      },
+      {
+        "word": "editors",
+        "pos": "N"
+      },
+      {
+        "word": "'",
+        "pos": ","
+      },
+      {
+        "word": "picks",
+        "pos": "V"
+      },
+      {
+        "word": "include",
+        "pos": "V"
+      },
+      {
+        "word": "richly",
+        "pos": "R"
+      },
+      {
+        "word": "imagined",
+        "pos": "V"
+      },
+      {
+        "word": "debut",
+        "pos": "N"
+      },
+      {
+        "word": "novels",
+        "pos": "N"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "riveting",
+        "pos": "A"
+      },
+      {
+        "word": "investigative",
+        "pos": "A"
+      },
+      {
+        "word": "journalism",
+        "pos": "N"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "and",
+        "pos": "&"
+      },
+      {
+        "word": "spine-tingling",
+        "pos": "N"
+      },
+      {
+        "word": "thrillers",
+        "pos": "N"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "as",
+        "pos": "R"
+      },
+      {
+        "word": "well",
+        "pos": "R"
+      },
+      {
+        "word": "as",
+        "pos": "R"
+      },
+      {
+        "word": "more",
+        "pos": "R"
+      },
+      {
+        "word": "new",
+        "pos": "A"
+      },
+      {
+        "word": "fiction",
+        "pos": "N"
+      },
+      {
+        "word": "and",
+        "pos": "&"
+      },
+      {
+        "word": "nonfiction",
+        "pos": "N"
+      },
+      {
+        "word": ".",
+        "pos": ","
+      },
+      {
+        "word": "http://amzn.to/MKQDxB",
+        "pos": "U"
+      }
+    ],
+    "long_text": 1,
+    "unix_stamp": 1340499520,
+    "HOD": 19,
+    "hyper_link": 1,
+    "post_id": "14408401557_10151036472686558",
+    "negatives": [
+      "fiction"
+    ],
+    "positives": [
+      "richly",
+      "well"
+    ],
+    "num_of_post_likes": 216,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "What will you be reading during the first weekend of summer?",
+    "fb_id": "14408401557",
+    "num_of_shares": 16,
+    "name_entities": [
+      {
+        "@support": "674",
+        "@URI": "http://dbpedia.org/resource/Summer",
+        "@surfaceForm": "summer",
+        "@offset": "53",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.9965253472328186",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 880,
+    "DOW": 5,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 18319,
+    "question": 1,
+    "POS": [
+      {
+        "word": "What",
+        "pos": "O"
+      },
+      {
+        "word": "will",
+        "pos": "V"
+      },
+      {
+        "word": "you",
+        "pos": "O"
+      },
+      {
+        "word": "be",
+        "pos": "V"
+      },
+      {
+        "word": "reading",
+        "pos": "V"
+      },
+      {
+        "word": "during",
+        "pos": "P"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "first",
+        "pos": "A"
+      },
+      {
+        "word": "weekend",
+        "pos": "N"
+      },
+      {
+        "word": "of",
+        "pos": "P"
+      },
+      {
+        "word": "summer",
+        "pos": "N"
+      },
+      {
+        "word": "?",
+        "pos": ","
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1340417045,
+    "HOD": 21,
+    "hyper_link": 0,
+    "post_id": "14408401557_10151034636556558",
+    "negatives": [],
+    "positives": [],
+    "num_of_post_likes": 216,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "In today's big-hearted Daily Deal, a pioneering woman takes on her Great Depression-era town and leaves behind a legacy that will shape the lives of her children and her grandchildren.",
+    "fb_id": "14408401557",
+    "num_of_shares": 1,
+    "name_entities": [
+      {
+        "@support": "431",
+        "@URI": "http://dbpedia.org/resource/Woman",
+        "@surfaceForm": "woman",
+        "@offset": "48",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.8967244029045105",
+        "@types": ""
+      },
+      {
+        "@support": "1183",
+        "@URI": "http://dbpedia.org/resource/New_England_town",
+        "@surfaceForm": "town",
+        "@offset": "88",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.6451110243797302",
+        "@types": ""
+      },
+      {
+        "@support": "3270",
+        "@URI": "http://dbpedia.org/resource/Leaf",
+        "@surfaceForm": "leaves",
+        "@offset": "97",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.35257405042648315",
+        "@types": ""
+      },
+      {
+        "@support": "869",
+        "@URI": "http://dbpedia.org/resource/Will_%28law%29",
+        "@surfaceForm": "legacy",
+        "@offset": "113",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.6459920406341553",
+        "@types": ""
+      },
+      {
+        "@support": "1374",
+        "@URI": "http://dbpedia.org/resource/Family",
+        "@surfaceForm": "grandchildren",
+        "@offset": "170",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.6628906726837158",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 2,
+    "DOW": 5,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 53922,
+    "question": 0,
+    "POS": [
+      {
+        "word": "In",
+        "pos": "P"
+      },
+      {
+        "word": "today's",
+        "pos": "S"
+      },
+      {
+        "word": "big-hearted",
+        "pos": "A"
+      },
+      {
+        "word": "Daily",
+        "pos": "A"
+      },
+      {
+        "word": "Deal",
+        "pos": "N"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "pioneering",
+        "pos": "A"
+      },
+      {
+        "word": "woman",
+        "pos": "N"
+      },
+      {
+        "word": "takes",
+        "pos": "V"
+      },
+      {
+        "word": "on",
+        "pos": "P"
+      },
+      {
+        "word": "her",
+        "pos": "D"
+      },
+      {
+        "word": "Great",
+        "pos": "A"
+      },
+      {
+        "word": "Depression-era",
+        "pos": "A"
+      },
+      {
+        "word": "town",
+        "pos": "N"
+      },
+      {
+        "word": "and",
+        "pos": "&"
+      },
+      {
+        "word": "leaves",
+        "pos": "V"
+      },
+      {
+        "word": "behind",
+        "pos": "P"
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "legacy",
+        "pos": "N"
+      },
+      {
+        "word": "that",
+        "pos": "P"
+      },
+      {
+        "word": "will",
+        "pos": "V"
+      },
+      {
+        "word": "shape",
+        "pos": "V"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "lives",
+        "pos": "N"
+      },
+      {
+        "word": "of",
+        "pos": "P"
+      },
+      {
+        "word": "her",
+        "pos": "D"
+      },
+      {
+        "word": "children",
+        "pos": "N"
+      },
+      {
+        "word": "and",
+        "pos": "&"
+      },
+      {
+        "word": "her",
+        "pos": "D"
+      },
+      {
+        "word": "grandchildren",
+        "pos": "N"
+      },
+      {
+        "word": ".",
+        "pos": ","
+      }
+    ],
+    "long_text": 1,
+    "unix_stamp": 1340398726,
+    "HOD": 15,
+    "hyper_link": 0,
+    "post_id": "14408401557_348323651906013",
+    "negatives": [],
+    "positives": [
+      "great"
+    ],
+    "num_of_post_likes": 43,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "Take Kindle out to the ballgame and keep score with this handy new app (peanuts and Cracker Jacks sold separately)!",
+    "fb_id": "14408401557",
+    "num_of_shares": 1,
+    "name_entities": [
+      {
+        "@support": "141",
+        "@URI": "http://dbpedia.org/resource/Amazon_Kindle",
+        "@surfaceForm": "kindle",
+        "@offset": "5",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.1594712734222412",
+        "@types": ""
+      },
+      {
+        "@support": "64",
+        "@URI": "http://dbpedia.org/resource/Ball_game",
+        "@surfaceForm": "ballgame",
+        "@offset": "23",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.16982044279575348",
+        "@types": ""
+      },
+      {
+        "@support": "448",
+        "@URI": "http://dbpedia.org/resource/Sheet_music",
+        "@surfaceForm": "score",
+        "@offset": "41",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.530035138130188",
+        "@types": ""
+      },
+      {
+        "@support": "727",
+        "@URI": "http://dbpedia.org/resource/Peanuts",
+        "@surfaceForm": "peanuts",
+        "@offset": "72",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.39848756790161133",
+        "@types": ""
+      },
+      {
+        "@support": "47",
+        "@URI": "http://dbpedia.org/resource/Cracker_Jack",
+        "@surfaceForm": "cracker jacks",
+        "@offset": "84",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.8467350602149963",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 16,
+    "DOW": 5,
+    "exclamation": 1,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 85351,
+    "question": 0,
+    "POS": [
+      {
+        "word": "Take",
+        "pos": "V"
+      },
+      {
+        "word": "Kindle",
+        "pos": "^"
+      },
+      {
+        "word": "out",
+        "pos": "P"
+      },
+      {
+        "word": "to",
+        "pos": "P"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "ballgame",
+        "pos": "N"
+      },
+      {
+        "word": "and",
+        "pos": "&"
+      },
+      {
+        "word": "keep",
+        "pos": "V"
+      },
+      {
+        "word": "score",
+        "pos": "N"
+      },
+      {
+        "word": "with",
+        "pos": "P"
+      },
+      {
+        "word": "this",
+        "pos": "D"
+      },
+      {
+        "word": "handy",
+        "pos": "A"
+      },
+      {
+        "word": "new",
+        "pos": "A"
+      },
+      {
+        "word": "app",
+        "pos": "N"
+      },
+      {
+        "word": "(",
+        "pos": ","
+      },
+      {
+        "word": "peanuts",
+        "pos": "N"
+      },
+      {
+        "word": "and",
+        "pos": "&"
+      },
+      {
+        "word": "Cracker",
+        "pos": "^"
+      },
+      {
+        "word": "Jacks",
+        "pos": "^"
+      },
+      {
+        "word": "sold",
+        "pos": "V"
+      },
+      {
+        "word": "separately)",
+        "pos": "R"
+      },
+      {
+        "word": "!",
+        "pos": ","
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1340344804,
+    "HOD": 1,
+    "hyper_link": 0,
+    "post_id": "14408401557_318296431593174",
+    "negatives": [],
+    "positives": [
+      "handy"
+    ],
+    "num_of_post_likes": 63,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "unicode error",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [
+      {
+        "@support": "1757",
+        "@URI": "http://dbpedia.org/resource/Unicode",
+        "@surfaceForm": "unicode",
+        "@offset": "0",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.15882804989814758",
+        "@types": ""
+      },
+      {
+        "@support": "3",
+        "@URI": "http://dbpedia.org/resource/Error_%28law%29",
+        "@surfaceForm": "error",
+        "@offset": "8",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "2.9948904514312744",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 1,
+    "DOW": 4,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 11487,
+    "question": 0,
+    "POS": [
+      {
+        "word": "unicode",
+        "pos": "^"
+      },
+      {
+        "word": "error",
+        "pos": "N"
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1340259453,
+    "HOD": 1,
+    "hyper_link": 0,
+    "post_id": "14408401557_296795457083631",
+    "negatives": [
+      "error"
+    ],
+    "positives": [],
+    "num_of_post_likes": 68,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "unknown",
+    "negations": []
+  },
+  {
+    "text": "unicode error",
+    "fb_id": "14408401557",
+    "num_of_shares": 16,
+    "name_entities": [
+      {
+        "@support": "1757",
+        "@URI": "http://dbpedia.org/resource/Unicode",
+        "@surfaceForm": "unicode",
+        "@offset": "0",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.15882804989814758",
+        "@types": ""
+      },
+      {
+        "@support": "3",
+        "@URI": "http://dbpedia.org/resource/Error_%28law%29",
+        "@surfaceForm": "error",
+        "@offset": "8",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "2.9948904514312744",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 21,
+    "DOW": 3,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 24361,
+    "question": 0,
+    "POS": [
+      {
+        "word": "unicode",
+        "pos": "^"
+      },
+      {
+        "word": "error",
+        "pos": "N"
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1340247966,
+    "HOD": 22,
+    "hyper_link": 0,
+    "post_id": "14408401557_411524038886311",
+    "negatives": [
+      "error"
+    ],
+    "positives": [],
+    "num_of_post_likes": 102,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "unknown",
+    "negations": []
+  },
+  {
+    "text": "A new, free software update for Kindle is now available that adds a crisper reading font, improved parental controls, and more! (Make sure Kindle is connected to WiFi to receive the update)",
+    "fb_id": "14408401557",
+    "num_of_shares": 279,
+    "name_entities": [
+      {
+        "@support": "2334",
+        "@URI": "http://dbpedia.org/resource/Free_software",
+        "@surfaceForm": "free software",
+        "@offset": "7",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.6440538763999939",
+        "@types": ""
+      },
+      {
+        "@support": "441",
+        "@URI": "http://dbpedia.org/resource/Font",
+        "@surfaceForm": "font",
+        "@offset": "84",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.498335063457489",
+        "@types": ""
+      },
+      {
+        "@support": "22",
+        "@URI": "http://dbpedia.org/resource/Parental_controls",
+        "@surfaceForm": "parental controls",
+        "@offset": "99",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.49059706926345825",
+        "@types": ""
+      },
+      {
+        "@support": "14",
+        "@URI": "http://dbpedia.org/resource/More%21",
+        "@surfaceForm": "more!",
+        "@offset": "122",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.12960284948349",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 90,
+    "DOW": 3,
+    "exclamation": 1,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 116518,
+    "question": 0,
+    "POS": [
+      {
+        "word": "A",
+        "pos": "D"
+      },
+      {
+        "word": "new",
+        "pos": "A"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "free",
+        "pos": "A"
+      },
+      {
+        "word": "software",
+        "pos": "N"
+      },
+      {
+        "word": "update",
+        "pos": "N"
+      },
+      {
+        "word": "for",
+        "pos": "P"
+      },
+      {
+        "word": "Kindle",
+        "pos": "^"
+      },
+      {
+        "word": "is",
+        "pos": "V"
+      },
+      {
+        "word": "now",
+        "pos": "R"
+      },
+      {
+        "word": "available",
+        "pos": "A"
+      },
+      {
+        "word": "that",
+        "pos": "P"
+      },
+      {
+        "word": "adds",
+        "pos": "V"
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "crisper",
+        "pos": "N"
+      },
+      {
+        "word": "reading",
+        "pos": "V"
+      },
+      {
+        "word": "font",
+        "pos": "N"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "improved",
+        "pos": "V"
+      },
+      {
+        "word": "parental",
+        "pos": "A"
+      },
+      {
+        "word": "controls",
+        "pos": "N"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "and",
+        "pos": "&"
       },
       {
         "word": "more",
         "pos": "A"
       },
       {
-        "word": ".",
+        "word": "!",
         "pos": ","
       },
       {
@@ -122,80 +4487,1867 @@ curl -XPOST http://localhost:1234/sentence_batch -d '[
         "pos": ","
       },
       {
-        "word": "walmart",
+        "word": "Make",
+        "pos": "V"
+      },
+      {
+        "word": "sure",
+        "pos": "A"
+      },
+      {
+        "word": "Kindle",
         "pos": "^"
+      },
+      {
+        "word": "is",
+        "pos": "V"
+      },
+      {
+        "word": "connected",
+        "pos": "A"
+      },
+      {
+        "word": "to",
+        "pos": "P"
+      },
+      {
+        "word": "WiFi",
+        "pos": "^"
+      },
+      {
+        "word": "to",
+        "pos": "P"
+      },
+      {
+        "word": "receive",
+        "pos": "V"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "update",
+        "pos": "N"
       },
       {
         "word": ")",
         "pos": ","
       }
     ],
+    "long_text": 1,
+    "unix_stamp": 1340223605,
+    "HOD": 15,
+    "hyper_link": 0,
+    "post_id": "14408401557_249723765143274",
+    "negatives": [],
+    "positives": [
+      "free",
+      "crisper"
+    ],
+    "num_of_post_likes": 488,
+    "MOY": 6,
+    "contains_upper_case": 1,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "unicode error",
+    "fb_id": "14408401557",
+    "num_of_shares": 27,
     "name_entities": [
       {
-        "@support": "31",
-        "@URI": "http://dbpedia.org/resource/Under_the_Yum_Yum_Tree",
-        "@surfaceForm": "yum",
+        "@support": "1757",
+        "@URI": "http://dbpedia.org/resource/Unicode",
+        "@surfaceForm": "unicode",
         "@offset": "0",
         "@percentageOfSecondRank": "-1.0",
-        "@similarityScore": "0.3283892571926117",
+        "@similarityScore": "0.15882804989814758",
         "@types": ""
       },
       {
-        "@support": "32",
-        "@URI": "http://dbpedia.org/resource/Percussion_mallet",
-        "@surfaceForm": "drumsticks",
-        "@offset": "5",
+        "@support": "3",
+        "@URI": "http://dbpedia.org/resource/Error_%28law%29",
+        "@surfaceForm": "error",
+        "@offset": "8",
         "@percentageOfSecondRank": "-1.0",
-        "@similarityScore": "0.2482556700706482",
-        "@types": ""
-      },
-      {
-        "@support": "233",
-        "@URI": "http://dbpedia.org/resource/Peanut_butter",
-        "@surfaceForm": "peanut butter",
-        "@offset": "34",
-        "@percentageOfSecondRank": "-1.0",
-        "@similarityScore": "1.0641151666641235",
-        "@types": ""
-      },
-      {
-        "@support": "547",
-        "@URI": "http://dbpedia.org/resource/Vanilla",
-        "@surfaceForm": "vanilla",
-        "@offset": "67",
-        "@percentageOfSecondRank": "-1.0",
-        "@similarityScore": "0.8593834638595581",
-        "@types": ""
-      },
-      {
-        "@support": "233",
-        "@URI": "http://dbpedia.org/resource/Peanut_butter",
-        "@surfaceForm": "peanut butter",
-        "@offset": "75",
-        "@percentageOfSecondRank": "-1.0",
-        "@similarityScore": "1.0641151666641235",
-        "@types": ""
-      },
-      {
-        "@support": "414",
-        "@URI": "http://dbpedia.org/resource/Walmart",
-        "@surfaceForm": "walmart",
-        "@offset": "96",
-        "@percentageOfSecondRank": "-1.0",
-        "@similarityScore": "0.5478489398956299",
+        "@similarityScore": "2.9948904514312744",
         "@types": ""
       }
     ],
-    "ask_share": 1,
-    "ask_like": 1,
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 14,
+    "DOW": 2,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 206792,
+    "question": 0,
+    "POS": [
+      {
+        "word": "unicode",
+        "pos": "^"
+      },
+      {
+        "word": "error",
+        "pos": "N"
+      }
+    ],
     "long_text": 0,
+    "unix_stamp": 1340107087,
+    "HOD": 6,
+    "hyper_link": 0,
+    "post_id": "14408401557_192499757544696",
+    "negatives": [
+      "error"
+    ],
+    "positives": [],
+    "num_of_post_likes": 210,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "unknown",
+    "negations": []
+  },
+  {
+    "text": "Need a last-minute gift idea for the Kindle-loving Dad in your life?",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [
+      {
+        "@support": "5",
+        "@URI": "http://dbpedia.org/resource/Night_on_the_Sun",
+        "@surfaceForm": "your life",
+        "@offset": "58",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.2838670611381531",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 4,
+    "DOW": 6,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 187743,
+    "question": 0,
+    "POS": [
+      {
+        "word": "Need",
+        "pos": "V"
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "last-minute",
+        "pos": "A"
+      },
+      {
+        "word": "gift",
+        "pos": "N"
+      },
+      {
+        "word": "idea",
+        "pos": "N"
+      },
+      {
+        "word": "for",
+        "pos": "P"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "Kindle-loving",
+        "pos": "^"
+      },
+      {
+        "word": "Dad",
+        "pos": "^"
+      },
+      {
+        "word": "in",
+        "pos": "P"
+      },
+      {
+        "word": "your",
+        "pos": "D"
+      },
+      {
+        "word": "life",
+        "pos": "N"
+      },
+      {
+        "word": "?",
+        "pos": ","
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1339900295,
+    "HOD": 21,
+    "hyper_link": 0,
+    "post_id": "14408401557_481143611911850",
+    "negatives": [],
+    "positives": [],
+    "num_of_post_likes": 87,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "Like this post if you're never too old for comics and kids' books!",
+    "fb_id": "14408401557",
+    "num_of_shares": 32,
+    "name_entities": [
+      {
+        "@support": "1341",
+        "@URI": "http://dbpedia.org/resource/New_York_Post",
+        "@surfaceForm": "post",
+        "@offset": "10",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "1.0740563869476318",
+        "@types": ""
+      },
+      {
+        "@support": "215",
+        "@URI": "http://dbpedia.org/resource/4Kids_Entertainment",
+        "@surfaceForm": "kids",
+        "@offset": "54",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.6298257112503052",
+        "@types": ""
+      },
+      {
+        "@support": "1802",
+        "@URI": "http://dbpedia.org/resource/Book",
+        "@surfaceForm": "books",
+        "@offset": "60",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.9939742684364319",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 28,
+    "DOW": 4,
+    "exclamation": 1,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 15441,
+    "question": 0,
+    "POS": [
+      {
+        "word": "Like",
+        "pos": "P"
+      },
+      {
+        "word": "this",
+        "pos": "O"
+      },
+      {
+        "word": "post",
+        "pos": "V"
+      },
+      {
+        "word": "if",
+        "pos": "P"
+      },
+      {
+        "word": "you're",
+        "pos": "L"
+      },
+      {
+        "word": "never",
+        "pos": "R"
+      },
+      {
+        "word": "too",
+        "pos": "R"
+      },
+      {
+        "word": "old",
+        "pos": "A"
+      },
+      {
+        "word": "for",
+        "pos": "P"
+      },
+      {
+        "word": "comics",
+        "pos": "N"
+      },
+      {
+        "word": "and",
+        "pos": "&"
+      },
+      {
+        "word": "kids",
+        "pos": "N"
+      },
+      {
+        "word": "'",
+        "pos": ","
+      },
+      {
+        "word": "books",
+        "pos": "N"
+      },
+      {
+        "word": "!",
+        "pos": ","
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1339712552,
+    "HOD": 17,
+    "hyper_link": 0,
+    "post_id": "14408401557_427317890633259",
+    "negatives": [],
     "positives": [
-      "yum",
-      "like",
-      "love",
       "like"
     ],
-    "DOW": 5,
+    "num_of_post_likes": 3957,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": [
+      "never"
+    ]
+  },
+  {
+    "text": "There's still time for the perfect Father's Day gift!",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [
+      {
+        "@support": "6",
+        "@URI": "http://dbpedia.org/resource/Still_Time",
+        "@surfaceForm": "still time",
+        "@offset": "8",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.7071468830108643",
+        "@types": ""
+      },
+      {
+        "@support": "189",
+        "@URI": "http://dbpedia.org/resource/Father%27s_Day",
+        "@surfaceForm": "father's day",
+        "@offset": "35",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "2.1837821006774902",
+        "@types": ""
+      },
+      {
+        "@support": "14",
+        "@URI": "http://dbpedia.org/resource/The_Gift_%28Bizzy_Bone_album%29",
+        "@surfaceForm": "gift",
+        "@offset": "48",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "1.6730625629425049",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 43,
+    "DOW": 4,
+    "exclamation": 1,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 37845,
+    "question": 0,
+    "POS": [
+      {
+        "word": "There's",
+        "pos": "L"
+      },
+      {
+        "word": "still",
+        "pos": "R"
+      },
+      {
+        "word": "time",
+        "pos": "N"
+      },
+      {
+        "word": "for",
+        "pos": "P"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "perfect",
+        "pos": "A"
+      },
+      {
+        "word": "Father's",
+        "pos": "Z"
+      },
+      {
+        "word": "Day",
+        "pos": "N"
+      },
+      {
+        "word": "gift",
+        "pos": "N"
+      },
+      {
+        "word": "!",
+        "pos": ","
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1339697111,
+    "HOD": 13,
+    "hyper_link": 0,
+    "post_id": "14408401557_419975581379865",
+    "negatives": [],
+    "positives": [
+      "perfect"
+    ],
+    "num_of_post_likes": 158,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "The second book in Nancy Pearl's \"Book Lust Rediscoveries\" series may be about a young clairvoyant, but you don't have to be psychic to know that it will be a great addition to your reading list!",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [
+      {
+        "@support": "17",
+        "@URI": "http://dbpedia.org/resource/Zweites_Buch",
+        "@surfaceForm": "second book",
+        "@offset": "4",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.3723013401031494",
+        "@types": ""
+      },
+      {
+        "@support": "6",
+        "@URI": "http://dbpedia.org/resource/Book_Lust",
+        "@surfaceForm": "book lust",
+        "@offset": "34",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.6012118458747864",
+        "@types": ""
+      },
+      {
+        "@support": "57",
+        "@URI": "http://dbpedia.org/resource/1632_series",
+        "@surfaceForm": "series",
+        "@offset": "59",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.6940742135047913",
+        "@types": ""
+      },
+      {
+        "@support": "68",
+        "@URI": "http://dbpedia.org/resource/The_List_%28magazine%29",
+        "@surfaceForm": "list",
+        "@offset": "190",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "1.038330316543579",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 1,
+    "DOW": 4,
+    "exclamation": 1,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 22256,
+    "question": 0,
+    "POS": [],
+    "long_text": 1,
+    "unix_stamp": 1339659266,
+    "HOD": 2,
+    "hyper_link": 0,
+    "post_id": "14408401557_105595062915811",
+    "negatives": [],
+    "positives": [
+      "great"
+    ],
+    "num_of_post_likes": 41,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "Have you ever wanted to write a short thrill-ride of a novel that blends horror and action adventure? The creators of \"The Dead Man\" series are giving one lucky (and talented) writer the chance to do just that... and it could be you!",
+    "fb_id": "14408401557",
+    "num_of_shares": 27,
+    "name_entities": [
+      {
+        "@support": "1660",
+        "@URI": "http://dbpedia.org/resource/Horror_fiction",
+        "@surfaceForm": "horror",
+        "@offset": "73",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.9724689722061157",
+        "@types": ""
+      },
+      {
+        "@support": "561",
+        "@URI": "http://dbpedia.org/resource/Action-adventure_game",
+        "@surfaceForm": "action adventure",
+        "@offset": "84",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.6179002523422241",
+        "@types": ""
+      },
+      {
+        "@support": "17",
+        "@URI": "http://dbpedia.org/resource/The_Creators",
+        "@surfaceForm": "creators",
+        "@offset": "106",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.17568416893482208",
+        "@types": ""
+      },
+      {
+        "@support": "57",
+        "@URI": "http://dbpedia.org/resource/Dead_Man",
+        "@surfaceForm": "dead man",
+        "@offset": "123",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.44845491647720337",
+        "@types": ""
+      },
+      {
+        "@support": "8706",
+        "@URI": "http://dbpedia.org/resource/Writer",
+        "@surfaceForm": "writer",
+        "@offset": "176",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.4219551086425781",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 6,
+    "DOW": 3,
+    "exclamation": 1,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 17330,
+    "question": 0,
+    "POS": [],
+    "long_text": 1,
+    "unix_stamp": 1339637010,
+    "HOD": 20,
+    "hyper_link": 0,
+    "post_id": "14408401557_450283788329476",
+    "negatives": [
+      "horror",
+      "dead"
+    ],
+    "positives": [
+      "lucky",
+      "talented"
+    ],
+    "num_of_post_likes": 82,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "Pull up a chair and sit a spell. Today's Daily Deal will delight and entertain with tales of life in the legendary South!",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [
+      {
+        "@support": "319",
+        "@URI": "http://dbpedia.org/resource/Chair",
+        "@surfaceForm": "chair",
+        "@offset": "10",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.5840122699737549",
+        "@types": ""
+      },
+      {
+        "@support": "142",
+        "@URI": "http://dbpedia.org/resource/Spelling",
+        "@surfaceForm": "spell",
+        "@offset": "26",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.3016207814216614",
+        "@types": ""
+      },
+      {
+        "@support": "60",
+        "@URI": "http://dbpedia.org/resource/Tales_%28series%29",
+        "@surfaceForm": "tales of",
+        "@offset": "84",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.05874000862240791",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 0,
+    "DOW": 3,
+    "exclamation": 1,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 51576,
+    "question": 0,
+    "POS": [
+      {
+        "word": "Pull",
+        "pos": "V"
+      },
+      {
+        "word": "up",
+        "pos": "T"
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "chair",
+        "pos": "N"
+      },
+      {
+        "word": "and",
+        "pos": "&"
+      },
+      {
+        "word": "sit",
+        "pos": "V"
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "spell",
+        "pos": "N"
+      },
+      {
+        "word": ".",
+        "pos": ","
+      },
+      {
+        "word": "Today's",
+        "pos": "S"
+      },
+      {
+        "word": "Daily",
+        "pos": "^"
+      },
+      {
+        "word": "Deal",
+        "pos": "N"
+      },
+      {
+        "word": "will",
+        "pos": "V"
+      },
+      {
+        "word": "delight",
+        "pos": "N"
+      },
+      {
+        "word": "and",
+        "pos": "&"
+      },
+      {
+        "word": "entertain",
+        "pos": "V"
+      },
+      {
+        "word": "with",
+        "pos": "P"
+      },
+      {
+        "word": "tales",
+        "pos": "N"
+      },
+      {
+        "word": "of",
+        "pos": "P"
+      },
+      {
+        "word": "life",
+        "pos": "N"
+      },
+      {
+        "word": "in",
+        "pos": "P"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "legendary",
+        "pos": "A"
+      },
+      {
+        "word": "South",
+        "pos": "N"
+      },
+      {
+        "word": "!",
+        "pos": ","
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1339619680,
+    "HOD": 15,
+    "hyper_link": 0,
+    "post_id": "14408401557_372522449468892",
+    "negatives": [],
+    "positives": [
+      "delight",
+      "entertain",
+      "legendary"
+    ],
+    "num_of_post_likes": 47,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "unicode error",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [
+      {
+        "@support": "1757",
+        "@URI": "http://dbpedia.org/resource/Unicode",
+        "@surfaceForm": "unicode",
+        "@offset": "0",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.15882804989814758",
+        "@types": ""
+      },
+      {
+        "@support": "3",
+        "@URI": "http://dbpedia.org/resource/Error_%28law%29",
+        "@surfaceForm": "error",
+        "@offset": "8",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "2.9948904514312744",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 14,
+    "DOW": 3,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 31135,
+    "question": 0,
+    "POS": [
+      {
+        "word": "unicode",
+        "pos": "^"
+      },
+      {
+        "word": "error",
+        "pos": "N"
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1339568104,
+    "HOD": 1,
+    "hyper_link": 0,
+    "post_id": "14408401557_305647606192299",
+    "negatives": [
+      "error"
+    ],
+    "positives": [],
+    "num_of_post_likes": 310,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "unknown",
+    "negations": []
+  },
+  {
+    "text": "Today's Daily Deal is a delicious, food-filled mystery... so we just have to ask: What's the best snack to enjoy with a good read?",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [
+      {
+        "@support": "10",
+        "@URI": "http://dbpedia.org/resource/A_Good_Read",
+        "@surfaceForm": "good read",
+        "@offset": "120",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.38733118772506714",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 15,
+    "DOW": 2,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 66986,
+    "question": 1,
+    "POS": [
+      {
+        "word": "Today's",
+        "pos": "S"
+      },
+      {
+        "word": "Daily",
+        "pos": "A"
+      },
+      {
+        "word": "Deal",
+        "pos": "N"
+      },
+      {
+        "word": "is",
+        "pos": "V"
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "delicious",
+        "pos": "A"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "food-filled",
+        "pos": "N"
+      },
+      {
+        "word": "mystery",
+        "pos": "N"
+      },
+      {
+        "word": "...",
+        "pos": ","
+      },
+      {
+        "word": "so",
+        "pos": "P"
+      },
+      {
+        "word": "we",
+        "pos": "O"
+      },
+      {
+        "word": "just",
+        "pos": "R"
+      },
+      {
+        "word": "have",
+        "pos": "V"
+      },
+      {
+        "word": "to",
+        "pos": "P"
+      },
+      {
+        "word": "ask",
+        "pos": "V"
+      },
+      {
+        "word": ":",
+        "pos": ","
+      },
+      {
+        "word": "What's",
+        "pos": "L"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "best",
+        "pos": "A"
+      },
+      {
+        "word": "snack",
+        "pos": "N"
+      },
+      {
+        "word": "to",
+        "pos": "P"
+      },
+      {
+        "word": "enjoy",
+        "pos": "V"
+      },
+      {
+        "word": "with",
+        "pos": "P"
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "good",
+        "pos": "A"
+      },
+      {
+        "word": "read",
+        "pos": "N"
+      },
+      {
+        "word": "?",
+        "pos": ","
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1339536969,
+    "HOD": 16,
+    "hyper_link": 0,
+    "post_id": "14408401557_124090761062161",
+    "negatives": [
+      "mystery"
+    ],
+    "positives": [
+      "delicious",
+      "best",
+      "enjoy",
+      "good"
+    ],
+    "num_of_post_likes": 45,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "unicode error",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [
+      {
+        "@support": "1757",
+        "@URI": "http://dbpedia.org/resource/Unicode",
+        "@surfaceForm": "unicode",
+        "@offset": "0",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.15882804989814758",
+        "@types": ""
+      },
+      {
+        "@support": "3",
+        "@URI": "http://dbpedia.org/resource/Error_%28law%29",
+        "@surfaceForm": "error",
+        "@offset": "8",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "2.9948904514312744",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 17,
+    "DOW": 1,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 14312,
+    "question": 0,
+    "POS": [
+      {
+        "word": "unicode",
+        "pos": "^"
+      },
+      {
+        "word": "error",
+        "pos": "N"
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1339469983,
+    "HOD": 21,
+    "hyper_link": 0,
+    "post_id": "14408401557_219911348129452",
+    "negatives": [
+      "error"
+    ],
+    "positives": [],
+    "num_of_post_likes": 75,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "unknown",
+    "negations": []
+  },
+  {
+    "text": "Who's the biggest bookworm you know?",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 60,
+    "DOW": 1,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 230333,
+    "question": 0,
+    "POS": [
+      {
+        "word": "Who's",
+        "pos": "L"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "biggest",
+        "pos": "A"
+      },
+      {
+        "word": "bookworm",
+        "pos": "N"
+      },
+      {
+        "word": "you",
+        "pos": "O"
+      },
+      {
+        "word": "know",
+        "pos": "V"
+      },
+      {
+        "word": "?",
+        "pos": ","
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1339455671,
+    "HOD": 18,
+    "hyper_link": 0,
+    "post_id": "14408401557_190449354416712",
+    "negatives": [],
+    "positives": [],
+    "num_of_post_likes": 71,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "In today's explosive Daily Deal, spy-hunter Michael Thatcher tries to stop a Nazi plot to steal the Manhattan Project's atomic secrets!",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [
+      {
+        "@support": "1542",
+        "@URI": "http://dbpedia.org/resource/Espionage",
+        "@surfaceForm": "spy",
+        "@offset": "33",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.4400639235973358",
+        "@types": ""
+      },
+      {
+        "@support": "592",
+        "@URI": "http://dbpedia.org/resource/Hunter_College",
+        "@surfaceForm": "hunter",
+        "@offset": "37",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.44135987758636475",
+        "@types": ""
+      },
+      {
+        "@support": "54",
+        "@URI": "http://dbpedia.org/resource/Michael_%281996_film%29",
+        "@surfaceForm": "michael",
+        "@offset": "44",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.3602530360221863",
+        "@types": ""
+      },
+      {
+        "@support": "2507",
+        "@URI": "http://dbpedia.org/resource/Margaret_Thatcher",
+        "@surfaceForm": "thatcher",
+        "@offset": "52",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.4054184556007385",
+        "@types": ""
+      },
+      {
+        "@support": "1011",
+        "@URI": "http://dbpedia.org/resource/Manhattan_Project",
+        "@surfaceForm": "manhattan project",
+        "@offset": "100",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.7828258275985718",
+        "@types": ""
+      },
+      {
+        "@support": "11",
+        "@URI": "http://dbpedia.org/resource/Atomic_spies",
+        "@surfaceForm": "atomic secrets",
+        "@offset": "120",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.2502575218677521",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 23,
+    "DOW": 6,
+    "exclamation": 1,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 104767,
+    "question": 0,
+    "POS": [
+      {
+        "word": "In",
+        "pos": "P"
+      },
+      {
+        "word": "today's",
+        "pos": "S"
+      },
+      {
+        "word": "explosive",
+        "pos": "A"
+      },
+      {
+        "word": "Daily",
+        "pos": "^"
+      },
+      {
+        "word": "Deal",
+        "pos": "N"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "spy-hunter",
+        "pos": "N"
+      },
+      {
+        "word": "Michael",
+        "pos": "^"
+      },
+      {
+        "word": "Thatcher",
+        "pos": "^"
+      },
+      {
+        "word": "tries",
+        "pos": "V"
+      },
+      {
+        "word": "to",
+        "pos": "P"
+      },
+      {
+        "word": "stop",
+        "pos": "V"
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "Nazi",
+        "pos": "A"
+      },
+      {
+        "word": "plot",
+        "pos": "N"
+      },
+      {
+        "word": "to",
+        "pos": "P"
+      },
+      {
+        "word": "steal",
+        "pos": "V"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "Manhattan",
+        "pos": "^"
+      },
+      {
+        "word": "Project's",
+        "pos": "Z"
+      },
+      {
+        "word": "atomic",
+        "pos": "A"
+      },
+      {
+        "word": "secrets",
+        "pos": "N"
+      },
+      {
+        "word": "!",
+        "pos": ","
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1339225338,
+    "HOD": 2,
+    "hyper_link": 0,
+    "post_id": "14408401557_204154299707646",
+    "negatives": [
+      "explosive",
+      "plot",
+      "steal"
+    ],
+    "positives": [],
+    "num_of_post_likes": 84,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "unicode error",
+    "fb_id": "14408401557",
+    "num_of_shares": 13,
+    "name_entities": [
+      {
+        "@support": "1757",
+        "@URI": "http://dbpedia.org/resource/Unicode",
+        "@surfaceForm": "unicode",
+        "@offset": "0",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.15882804989814758",
+        "@types": ""
+      },
+      {
+        "@support": "3",
+        "@URI": "http://dbpedia.org/resource/Error_%28law%29",
+        "@surfaceForm": "error",
+        "@offset": "8",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "2.9948904514312744",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 28,
+    "DOW": 4,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 7373,
+    "question": 0,
+    "POS": [
+      {
+        "word": "unicode",
+        "pos": "^"
+      },
+      {
+        "word": "error",
+        "pos": "N"
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1339120571,
+    "HOD": 20,
+    "hyper_link": 0,
+    "post_id": "14408401557_300743616685443",
+    "negatives": [
+      "error"
+    ],
+    "positives": [],
+    "num_of_post_likes": 214,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "unknown",
+    "negations": []
+  },
+  {
+    "text": "unicode error",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [
+      {
+        "@support": "1757",
+        "@URI": "http://dbpedia.org/resource/Unicode",
+        "@surfaceForm": "unicode",
+        "@offset": "0",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.15882804989814758",
+        "@types": ""
+      },
+      {
+        "@support": "3",
+        "@URI": "http://dbpedia.org/resource/Error_%28law%29",
+        "@surfaceForm": "error",
+        "@offset": "8",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "2.9948904514312744",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 10,
+    "DOW": 4,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 99955,
+    "question": 0,
+    "POS": [
+      {
+        "word": "unicode",
+        "pos": "^"
+      },
+      {
+        "word": "error",
+        "pos": "N"
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1339113198,
+    "HOD": 18,
+    "hyper_link": 0,
+    "post_id": "14408401557_328362763905188",
+    "negatives": [
+      "error"
+    ],
+    "positives": [],
+    "num_of_post_likes": 84,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "unknown",
+    "negations": []
+  },
+  {
+    "text": "A modern classic, today's award-winning Daily Deal sets the standard for mystery and suspense.",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [
+      {
+        "@support": "202",
+        "@URI": "http://dbpedia.org/resource/Deal,_Kent",
+        "@surfaceForm": "deal",
+        "@offset": "46",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.48165804147720337",
+        "@types": ""
+      },
+      {
+        "@support": "1589",
+        "@URI": "http://dbpedia.org/resource/Thriller_%28genre%29",
+        "@surfaceForm": "suspense",
+        "@offset": "85",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.3837493658065796",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 13,
+    "DOW": 3,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 46286,
+    "question": 0,
+    "POS": [
+      {
+        "word": "A",
+        "pos": "D"
+      },
+      {
+        "word": "modern",
+        "pos": "A"
+      },
+      {
+        "word": "classic",
+        "pos": "N"
+      },
+      {
+        "word": ",",
+        "pos": ","
+      },
+      {
+        "word": "today's",
+        "pos": "S"
+      },
+      {
+        "word": "award-winning",
+        "pos": "A"
+      },
+      {
+        "word": "Daily",
+        "pos": "N"
+      },
+      {
+        "word": "Deal",
+        "pos": "N"
+      },
+      {
+        "word": "sets",
+        "pos": "V"
+      },
+      {
+        "word": "the",
+        "pos": "D"
+      },
+      {
+        "word": "standard",
+        "pos": "N"
+      },
+      {
+        "word": "for",
+        "pos": "P"
+      },
+      {
+        "word": "mystery",
+        "pos": "N"
+      },
+      {
+        "word": "and",
+        "pos": "&"
+      },
+      {
+        "word": "suspense",
+        "pos": "N"
+      },
+      {
+        "word": ".",
+        "pos": ","
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1339013243,
+    "HOD": 15,
+    "hyper_link": 0,
+    "post_id": "14408401557_395113013873863",
+    "negatives": [
+      "mystery"
+    ],
+    "positives": [
+      "modern",
+      "classic"
+    ],
+    "num_of_post_likes": 165,
+    "MOY": 6,
+    "contains_upper_case": 1,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "Check out this month's selection of 100 Kindle books for $3.99 or less and add a few bargains to your reading list!",
+    "fb_id": "14408401557",
+    "num_of_shares": 54,
+    "name_entities": [
+      {
+        "@support": "141",
+        "@URI": "http://dbpedia.org/resource/Amazon_Kindle",
+        "@surfaceForm": "kindle books",
+        "@offset": "40",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.31929805874824524",
+        "@types": ""
+      },
+      {
+        "@support": "68",
+        "@URI": "http://dbpedia.org/resource/The_List_%28magazine%29",
+        "@surfaceForm": "list",
+        "@offset": "110",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.6678726077079773",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 20,
+    "DOW": 3,
+    "exclamation": 1,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 36144,
+    "question": 0,
+    "POS": [
+      {
+        "word": "Check",
+        "pos": "V"
+      },
+      {
+        "word": "out",
+        "pos": "T"
+      },
+      {
+        "word": "this",
+        "pos": "D"
+      },
+      {
+        "word": "month's",
+        "pos": "S"
+      },
+      {
+        "word": "selection",
+        "pos": "N"
+      },
+      {
+        "word": "of",
+        "pos": "P"
+      },
+      {
+        "word": "100",
+        "pos": "$"
+      },
+      {
+        "word": "Kindle",
+        "pos": "^"
+      },
+      {
+        "word": "books",
+        "pos": "N"
+      },
+      {
+        "word": "for",
+        "pos": "P"
+      },
+      {
+        "word": "$3.99",
+        "pos": "$"
+      },
+      {
+        "word": "or",
+        "pos": "&"
+      },
+      {
+        "word": "less",
+        "pos": "A"
+      },
+      {
+        "word": "and",
+        "pos": "&"
+      },
+      {
+        "word": "add",
+        "pos": "V"
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "few",
+        "pos": "A"
+      },
+      {
+        "word": "bargains",
+        "pos": "N"
+      },
+      {
+        "word": "to",
+        "pos": "P"
+      },
+      {
+        "word": "your",
+        "pos": "D"
+      },
+      {
+        "word": "reading",
+        "pos": "N"
+      },
+      {
+        "word": "list",
+        "pos": "N"
+      },
+      {
+        "word": "!",
+        "pos": ","
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1338966957,
+    "HOD": 2,
+    "hyper_link": 0,
+    "post_id": "14408401557_345903278812373",
+    "negatives": [],
+    "positives": [],
+    "num_of_post_likes": 250,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "Hilarity unfolds in today's Daily Deal when two Irishmen walk into 1930s Albania with a tape recorder and a passion for epic poetry!",
+    "fb_id": "14408401557",
+    "num_of_shares": 12,
+    "name_entities": [
+      {
+        "@support": "308",
+        "@URI": "http://dbpedia.org/resource/Humour",
+        "@surfaceForm": "hilarity",
+        "@offset": "0",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.2704036235809326",
+        "@types": ""
+      },
+      {
+        "@support": "7110",
+        "@URI": "http://dbpedia.org/resource/Irish_people",
+        "@surfaceForm": "irishmen",
+        "@offset": "48",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.26969748735427856",
+        "@types": ""
+      },
+      {
+        "@support": "183",
+        "@URI": "http://dbpedia.org/resource/Caucasian_Albania",
+        "@surfaceForm": "albania",
+        "@offset": "73",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.32091057300567627",
+        "@types": ""
+      },
+      {
+        "@support": "253",
+        "@URI": "http://dbpedia.org/resource/Tape_recorder",
+        "@surfaceForm": "tape recorder",
+        "@offset": "88",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.5135222673416138",
+        "@types": ""
+      },
+      {
+        "@support": "868",
+        "@URI": "http://dbpedia.org/resource/Epic_poetry",
+        "@surfaceForm": "epic poetry",
+        "@offset": "120",
+        "@percentageOfSecondRank": "-1.0",
+        "@similarityScore": "0.30935364961624146",
+        "@types": ""
+      }
+    ],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 10,
+    "DOW": 2,
+    "exclamation": 1,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 162986,
+    "question": 0,
+    "POS": [
+      {
+        "word": "Hilarity",
+        "pos": "N"
+      },
+      {
+        "word": "unfolds",
+        "pos": "V"
+      },
+      {
+        "word": "in",
+        "pos": "P"
+      },
+      {
+        "word": "today's",
+        "pos": "S"
+      },
+      {
+        "word": "Daily",
+        "pos": "^"
+      },
+      {
+        "word": "Deal",
+        "pos": "N"
+      },
+      {
+        "word": "when",
+        "pos": "R"
+      },
+      {
+        "word": "two",
+        "pos": "$"
+      },
+      {
+        "word": "Irishmen",
+        "pos": "N"
+      },
+      {
+        "word": "walk",
+        "pos": "V"
+      },
+      {
+        "word": "into",
+        "pos": "P"
+      },
+      {
+        "word": "1930s",
+        "pos": "$"
+      },
+      {
+        "word": "Albania",
+        "pos": "^"
+      },
+      {
+        "word": "with",
+        "pos": "P"
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "tape",
+        "pos": "N"
+      },
+      {
+        "word": "recorder",
+        "pos": "N"
+      },
+      {
+        "word": "and",
+        "pos": "&"
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "passion",
+        "pos": "N"
+      },
+      {
+        "word": "for",
+        "pos": "P"
+      },
+      {
+        "word": "epic",
+        "pos": "A"
+      },
+      {
+        "word": "poetry",
+        "pos": "N"
+      },
+      {
+        "word": "!",
+        "pos": ","
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1338930813,
+    "HOD": 16,
+    "hyper_link": 0,
+    "post_id": "14408401557_474865512530486",
+    "negatives": [],
+    "positives": [
+      "passion"
+    ],
+    "num_of_post_likes": 116,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "en",
+    "negations": []
+  },
+  {
+    "text": "<br><a href=></a>",
+    "fb_id": "14408401557",
+    "num_of_shares": 0,
+    "name_entities": [],
+    "ask_share": 0,
+    "post_type": "status",
+    "num_of_comments": 0,
+    "DOW": 7,
+    "exclamation": 0,
+    "hash_tag": 0,
+    "ask_like": 0,
+    "time_since_last_post": 0,
+    "question": 0,
+    "POS": [
+      {
+        "word": "<",
+        "pos": "~"
+      },
+      {
+        "word": "br",
+        "pos": "G"
+      },
+      {
+        "word": ">",
+        "pos": "~"
+      },
+      {
+        "word": "<",
+        "pos": "~"
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": "href",
+        "pos": "N"
+      },
+      {
+        "word": "=></",
+        "pos": ","
+      },
+      {
+        "word": "a",
+        "pos": "D"
+      },
+      {
+        "word": ">",
+        "pos": "G"
+      }
+    ],
+    "long_text": 0,
+    "unix_stamp": 1338767827,
+    "HOD": 18,
+    "hyper_link": 0,
+    "post_id": "14408401557_10150994024486558",
+    "negatives": [],
+    "positives": [],
+    "num_of_post_likes": 0,
+    "MOY": 6,
+    "contains_upper_case": 0,
+    "language": "unknown",
     "negations": []
   }
 ]
