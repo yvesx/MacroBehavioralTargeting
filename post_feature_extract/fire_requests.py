@@ -9,7 +9,7 @@ import time
 import config
 import random
 import pymongo
-from pymongo import MongoClient
+#from pymongo import MongoClient
 import json
 import urllib2
 import urllib
@@ -92,8 +92,8 @@ def getPosts(fbid):
              "num_of_shares": int(row[5]),
              "post_type": row[6]
             }
-    unix_stamps.add(int(row[2]))
-    listOfPosts.add(post)
+    unix_stamps.append(int(row[2]))
+    listOfPosts.append(post)
 
   # need to get the time_since_last_post variable.
   unix_stamps.sort()
@@ -103,6 +103,7 @@ def getPosts(fbid):
 
 
 posts = getPosts(fb_id)
+print json.dumps(posts)
 cursor_s.close()
 req=urllib2.Request(config.endpoint, 
                     json.dumps(posts), 
