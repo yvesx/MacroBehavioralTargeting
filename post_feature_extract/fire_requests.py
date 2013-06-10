@@ -35,8 +35,9 @@ def getPosts(fbid):
   unix_stamps = []
 
   # careful. post_date and everyone not indexed.
+  # many page posts are just replies to user comments due to the crippled conversation structure at FB
   query = "SELECT post_id, post_message , UNIX_TIMESTAMP(post_date), num_of_post_likes , num_of_comments , num_of_shares ,\
-                  post_type FROM %s.%s%s WHERE everyone =0 ORDER BY post_date DESC LIMIT 100" % (config.db , fbid , config.suffix)
+                  post_type FROM %s.%s%s WHERE everyone =0 AND num_of_comments > 0 AND num_of_post_likes > 0 AND num_of_shares > 0 ORDER BY post_date DESC LIMIT 100" % (config.db , fbid , config.suffix)
   try:
     cursor_s.execute(query)
   except:
@@ -45,9 +46,9 @@ def getPosts(fbid):
   for i in xrange(cursor_s.rowcount):
     row = cursor_s.fetchone()
     try:
-      post_message = row[1]
+      post_message = row[1].encode('utf-8')
     except:
-      post_message = "text unavailable"
+      post_message = u""
     if row[6] == "NA":
       post_type = "status"
     else:
