@@ -11,7 +11,7 @@ import string
 import time
 import config
 import random
-import pymongo
+#import pymongo
 #from pymongo import MongoClient
 import json
 import urllib2
@@ -71,6 +71,11 @@ def getPosts(fbid):
     post["time_since_last_post"] = findLargestNegative(unix_stamps,post["unix_stamp"])
   return listOfPosts
 
+
+def PutMongo(array):
+  mongo_collection = config.mongo_collection
+  mongo_collection.insert(array,continue_on_error=True)
+  
 
 posts = getPosts(fb_id)
 print json.dumps(posts)
