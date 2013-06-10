@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# python ./fire_requests.py 107939332066
 # python ./fire_requests.py 309506851302 > bmw.json# bmw
 # python ./fire_requests.py 134615383218473 > bk.json# BK
 # python ./fire_requests.py 7224956785 > samsung.json # samsung mobile
@@ -74,8 +73,10 @@ def findLargestNegative(lst, num):
 def getPosts(fbid):
   listOfPosts = []
   unix_stamps = []
+
+  # careful. post_date and everyone not indexed.
   query = "SELECT post_id, post_message , UNIX_TIMESTAMP(post_date), num_of_post_likes , num_of_comments , num_of_shares ,\
-                  post_type FROM %s.%s%s LIMIT 50" % (config.db , fbid , config.suffix)
+                  post_type FROM %s.%s%s WHERE everyone =0 ORDER BY post_date DESC LIMIT 100" % (config.db , fbid , config.suffix)
   try:
     cursor_s.execute(query)
   except:
