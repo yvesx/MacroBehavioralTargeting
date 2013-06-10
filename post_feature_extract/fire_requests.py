@@ -21,46 +21,6 @@ config = config.config()
 cursor_s = config.cursor_s
 
 fb_id = str(sys.argv[1])
-
-def returnListOfFBIDs():
-  listOfID = {}
-  query = "SELECT fb_id, fb_name , category FROM %s.priority WHERE priority > 0" % (config.db)
-  try:
-    cursor_s.execute(query)
-  except:
-    print "error reading fb_id from table" 
-
-  for i in xrange(cursor_s.rowcount):
-    row = cursor_s.fetchone()
-    try:
-      fb_name = unicode(row[1], errors='ignore')
-    except:
-      fb_name = u""
-    try:
-      category = unicode(row[2], errors='ignore')
-    except:
-      category = u""
-    listOfID[str(row[0])] =  {"fb_name":fb_name , "category":category}
-
-  query = "SELECT fb_id, fb_name , category FROM %s.priority WHERE category LIKE 'tv%'" % (config.db)
-  try:
-    cursor_s.execute(query)
-  except:
-    print "error reading fb_id from table" 
-
-  for i in xrange(cursor_s.rowcount):
-    row = cursor_s.fetchone()
-    try:
-      fb_name = unicode(row[1], errors='ignore')
-    except:
-      fb_name = u""
-    try:
-      category = unicode(row[2], errors='ignore')
-    except:
-      category = u""
-    listOfID[str(row[0])] =  {"fb_name":fb_name , "category":category}
-  return listOfID
-
 #assume sorted list
 def findLargestNegative(lst, num):
   lst = [x - num for x in lst]
@@ -85,9 +45,9 @@ def getPosts(fbid):
   for i in xrange(cursor_s.rowcount):
     row = cursor_s.fetchone()
     try:
-      post_message = row[1].encode('utf-8')
+      post_message = row[1]
     except:
-      post_message = u"unicode error"
+      post_message = "text unavailable"
     if row[6] == "NA":
       post_type = "status"
     else:
