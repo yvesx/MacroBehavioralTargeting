@@ -13,3 +13,10 @@ python fire_requests.py 14408401557 > kindle.json
 curl -XPOST http://localhost:1234/sentence_batch --data @kindle.json > kindle_out.json
 # on mongo
 python io_with_mongo.py some.json
+
+
+# for post similarity
+python get_post_similarity.py 309506851302 bmw_post_sim.json&
+python get_post_similarity.py 134615383218473 bk_post_sim.json&
+python get_post_similarity.py 7224956785 samsung_post_sim.json&
+python get_post_similarity.py 211718455520845 visa_post_sim.json&
