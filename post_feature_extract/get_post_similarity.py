@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# python get_post_similarity.py 309506851302
+# python get_post_similarity.py 309506851302 bmw_post_sim.json
 # python get_post_similarity.py put bmw_post_sim.json
 
 import sys
@@ -15,6 +15,7 @@ import json
 import urllib2
 import urllib
 import itertools
+import cPickle as pickle
 
 config = config.config()
 cursor_s = config.cursor_s
@@ -80,9 +81,10 @@ def PutMongo(array):
   
 
 if (str(sys.argv[1]) == 'put'):
-  PutMongo(json.load(open(sys.argv[2])))
+  m = buildSimMatrix(pickle.load(open(sys.argv[2],"rb")))
+  PutMongo(m)
 else:
   fb_id = str(sys.argv[1])
   PU = getPostsResponse(fb_id)
-  print json.dumps(PU)
+  pickle.dump( PU, open( sys.argv[2], "wb" ) )
 
