@@ -1,8 +1,5 @@
 #!/usr/bin/python
-# python ./fire_requests.py 309506851302 > bmw.json# bmw
-# python ./fire_requests.py 134615383218473 > bk.json# BK
-# python ./fire_requests.py 7224956785 > samsung.json # samsung mobile
-# python ./fire_requests.py 211718455520845 > visa.json # visa
+# python io_with_mongo.py some.json
 
 import sys
 import os
