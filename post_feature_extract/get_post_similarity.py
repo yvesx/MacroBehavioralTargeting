@@ -41,7 +41,7 @@ def getPostsResponse(fbid):
   for pid in listOfPosts:
     userIDs = set()
     query = "SELECT user_id FROM %s.%s%s WHERE post_id='%s'\
-             LIMIT 5000" % (config.db , fbid , config.comment_suffix,pid)
+             LIMIT 10000" % (config.db , fbid , config.comment_suffix,pid)
     try:
       cursor_s.execute(query)
     except:
@@ -51,7 +51,7 @@ def getPostsResponse(fbid):
       userIDs.add(row[0])
     # post_id is not in general index.
     query = "SELECT user_id FROM %s.%s%s WHERE post_id='%s'\
-             LIMIT 5000" % (config.db , fbid , config.pl_suffix,pid)
+             LIMIT 10000" % (config.db , fbid , config.pl_suffix,pid)
     try:
       cursor_s.execute(query)
     except:
