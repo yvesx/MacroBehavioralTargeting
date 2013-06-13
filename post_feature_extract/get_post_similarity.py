@@ -1,5 +1,6 @@
 #!/usr/bin/python
-# python 
+# python get_post_similarity.py 309506851302
+# python get_post_similarity.py put bmw_post_sim.json
 
 import sys
 import os
@@ -18,8 +19,7 @@ import itertools
 config = config.config()
 cursor_s = config.cursor_s
 
-fb_id = str(sys.argv[1])
-#assume sorted list
+
 
 def getPostsResponse(fbid):
   listOfPosts = []
@@ -79,6 +79,10 @@ def PutMongo(array):
   mongo_collection.insert(array,continue_on_error=True)
   
 
-PU = getPostsResponse(fb_id)
-m = buildSimMatrix(PU)
-PutMongo(m)
+if (str(sys.argv[1]) == 'put'):
+  PutMongo(json.load(open(sys.argv[2])))
+else:
+  fb_id = str(sys.argv[1])
+  PU = getPostsResponse(fb_id)
+  print json.dumps(PU)
+
