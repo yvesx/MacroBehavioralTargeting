@@ -11,3 +11,5 @@ curl -XPOST http://localhost:1234/sentence_batch -d '[{"unix_stamp":1284101485, 
 python fire_requests.py 14408401557 > kindle.json
 # on social server
 curl -XPOST http://localhost:1234/sentence_batch --data @kindle.json > kindle_out.json
+# on mongo
+python io_with_mongo.py some.json
