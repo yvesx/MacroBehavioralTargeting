@@ -25,7 +25,6 @@ def getPostsResponse(fbid):
   listOfPosts = []
   PostsUsers = {}
 
-  # careful. post_date and everyone not indexed.
   # many page posts are just replies to user comments due to the crippled conversation structure at FB
   query = "SELECT post_id FROM %s.%s%s WHERE \
   everyone =0 AND num_of_comments > 0 AND num_of_post_likes > 0 AND num_of_shares > 0 \
@@ -50,6 +49,7 @@ def getPostsResponse(fbid):
     for i in xrange(cursor_s.rowcount):
       row = cursor_s.fetchone()
       userIDs.add(row[0])
+    # post_id is not in general index.
     query = "SELECT user_id FROM %s.%s%s WHERE post_id='%s'\
              LIMIT 5000" % (config.db , fbid , config.pl_suffix,pid)
     try:
