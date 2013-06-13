@@ -66,7 +66,7 @@ def getPostsResponse(fbid):
 def buildSimMatrix(PostsUsers):
   matrix = []
   pids = PostsUsers.keys()
-  for pair in itertools.combinations(pids, repeat=2):
+  for pair in itertools.combinations(pids,2):
     comm = len(PostsUsers[pair[0]] & PostsUsers[pair[1]])
     matrix.append({"post1":pair[0],
                    "post2":pair[1],
