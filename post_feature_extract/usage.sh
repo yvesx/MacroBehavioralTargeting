@@ -20,3 +20,9 @@ python get_post_similarity.py 309506851302 bmw_post_sim.json&
 python get_post_similarity.py 134615383218473 bk_post_sim.json&
 python get_post_similarity.py 7224956785 samsung_post_sim.json&
 python get_post_similarity.py 211718455520845 visa_post_sim.json&
+
+python get_post_similarity.py put bmw_post_sim.json&
+python get_post_similarity.py put bk_post_sim.json
+python get_post_similarity.py put samsung_post_sim.json
+python get_post_similarity.py put visa_post_sim.json
+
