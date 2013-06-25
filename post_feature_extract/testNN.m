@@ -24,19 +24,25 @@ for i = 1:cv
     testT = t(:,tr.testInd);
     testY = net(testX);
     testY = round(testY);
-    display('mis-classified w/ feedback');
     err_cum = err_cum + sum(abs(testT-testY))/length(testY);
 end
-err_cum/cv;
-ftr_lst(:,[1 5 21]) = 0;
-net = patternnet(10);
-x = ftr_lst';
-t = clst';
-[net,tr] = train(net,x,t);nntraintool('close');
-testX = x(:,tr.testInd);
-testT = t(:,tr.testInd);
-testY = net(testX);
-testY = round(testY);
+display('mis-classified w/ feedback');
+err_cum/cv
 
+err_cum = 0;
+for i = 1:cv
+    ftr_lst(:,[1 5 21]) = 0;
+    net = patternnet(10);
+    x = ftr_lst';
+    t = clst';
+    [net,tr] = train(net,x,t);nntraintool('close');
+    testX = x(:,tr.testInd);
+    testT = t(:,tr.testInd);
+    testY = net(testX);
+    testY = round(testY);
+
+    
+    err_cum = err_cum + sum(abs(testT-testY))/length(testY);
+end
 display('mis-classified w/o feedback');
-sum(abs(testT-testY))/length(testY)
+err_cum/cv
