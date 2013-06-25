@@ -8,7 +8,7 @@
 
 clear all;
 load bmw_matlab_matrix;
-cv=10
+cv=20;
 num_clst = 3;
 dense = double(dense);
 ftr_lst = double(ftr_lst);
