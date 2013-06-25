@@ -9,10 +9,15 @@
 clear all;
 load bmw_matlab_matrix;
 cv=20;
-num_clst = 3;
+num_clst = 2;
 dense = double(dense);
 ftr_lst = double(ftr_lst);
-clst = kmeans(dense,num_clst,'distance','cityblock');
+clst = kmeans(dense,num_clst,'distance','cosine','emptyaction','drop');
+%% using manhattan distance get very bad(small) clusters.
+%% this is b/c sparsity varies too much from post to post
+%% correlation distance is fine. Hamming is useless here
+
+%% why w/o feedback always performs better?
 
 %% first validate using full features lists
 err_cum = 0;
