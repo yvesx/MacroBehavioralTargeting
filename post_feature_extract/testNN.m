@@ -12,7 +12,7 @@ cv=20;
 num_clst = 3;
 dense = double(dense);
 ftr_lst = double(ftr_lst);
-clst = kmeans(dense,num_clst,'distance','cosine');
+clst = kmeans(dense,num_clst,'distance','cityblock');
 
 %% first validate using full features lists
 err_cum = 0;
