@@ -14,6 +14,7 @@ dense = double(dense);
 ftr_lst = double(ftr_lst);
 clst = kmeans(dense,num_clst,'distance','cosine');
 
+%% first validate using full features lists
 err_cum = 0;
 for i = 1:cv
     net = patternnet(10);
@@ -29,6 +30,7 @@ end
 display('mis-classified w/ feedback');
 err_cum/cv
 
+%% then validate with only non-feedback features
 err_cum = 0;
 for i = 1:cv
     ftr_lst(:,[1 5 21]) = 0;
