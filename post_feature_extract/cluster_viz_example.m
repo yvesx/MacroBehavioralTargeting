@@ -10,6 +10,8 @@ ftr3='PL';ftr4='PW';
 clstr1='NewProduct Posts';clstr2='Discount Posts';clstr3='Greeting Posts';
 clstrs={clstr1, clstr2, clstr3};
 meas = double(dense);
+meas = double(ftr_lst);
+dense = double(dense);
 [r c] = size(meas);
 ptsymb = {'bs','r^','md','go','c+'};
 lnsymb = {'b-','r-','m-'};
@@ -69,6 +71,8 @@ view(-137,10);
 grid on
 sidx = grp2idx(species);
 miss = find(cidxCos ~= sidx);
+%sidx = grp2idx(species);
+sidx = kmeans(dense,3,'distance','cosine','emptyaction','drop');miss = find(cidxCos ~= sidx);
 plot3(meas(miss,1),meas(miss,2),meas(miss,3),'k*');
 legend({clstr1,clstr2,clstr3});
 hold off
