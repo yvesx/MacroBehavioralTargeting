@@ -2,25 +2,28 @@ clear all
 close all
 load fisheriris
 load samsung_matlab_matrix
-labelx = 'Likes';
-labely = 'Viral';
-labelz = 'Rally';
+labelx = '#Shared';
+labely = '#Comments';
+labelz = '#Likes';
 ftr1='SL';ftr2='SW';
 ftr3='PL';ftr4='PW';
-clstr1='NewProduct';clstr2='Discount';clstr3='Greeting';
+clstr1='NewProduct Posts';clstr2='Discount Posts';clstr3='Greeting Posts';
 clstrs={clstr1, clstr2, clstr3};
 meas = double(dense);
+[r c] = size(meas);
+ptsymb = {'bs','r^','md','go','c+'};
+lnsymb = {'b-','r-','m-'};
 
 %% three clusters
-[cidx3,cmeans3,sumd3] = kmeans(meas,3,'replicates',5,'display','final');
-[silh3,h] = silhouette(meas,cidx3,'sqeuclidean');
+[cidx3,cmeans3,sumd3] = kmeans(meas,3,'distance','cosine' ,'replicates',2,'display','final');
+[silh3,h] = silhouette(meas,cidx3,'cosine');
 for i = 1:3
     clust = find(cidx3==i);
     plot3(meas(clust,1),meas(clust,5),meas(clust,21),ptsymb{i});
     hold on
 end
-plot3(cmeans3(:,1),cmeans3(:,2),cmeans3(:,3),'ko');
-plot3(cmeans3(:,1),cmeans3(:,2),cmeans3(:,3),'kx');
+plot3(cmeans3(:,1),cmeans3(:,5),cmeans3(:,21),'ko');
+plot3(cmeans3(:,1),cmeans3(:,5),cmeans3(:,21),'kx');
 hold off
 xlabel(labelx); ylabel(labely); zlabel(labelz);
 view(-137,10);
@@ -32,7 +35,7 @@ figure
 [silhCos,h] = silhouette(meas,cidxCos,'cos');
 for i = 1:3
     clust = find(cidxCos==i);
-    plot3(meas(clust,1),meas(clust,2),meas(clust,3),ptsymb{i});
+    plot3(meas(clust,1),meas(clust,5),meas(clust,21),ptsymb{i});
     hold on
 end
 hold off
@@ -41,9 +44,10 @@ view(-137,10);
 grid on
 figure
 
-lnsymb = {'b-','r-','m-'};
+%% thnunder plot
+
 names = {ftr1,ftr2,ftr3,ftr4};
-meas0 = meas ./ repmat(sqrt(sum(meas.^2,2)),1,4);
+meas0 = meas ./ repmat(sqrt(sum(meas.^2,2)),1,c);
 ymin = min(min(meas0));
 ymax = max(max(meas0));
 for i = 1:3
@@ -70,7 +74,7 @@ legend({clstr1,clstr2,clstr3});
 hold off
 figure
 
-eucD = pdist(meas,'cosine');
-clustTreeEuc = linkage(eucD,'average');
-[h,nodes] = dendrogram(clustTreeEuc,0);
+cosD = pdist(meas,'cosine');
+clustTreeCos = linkage(cosD,'average');
+[h,nodes] = dendrogram(clustTreeCos,0);
 set(gca,'TickDir','out','TickLength',[.002 0],'XTickLabel',[]);
