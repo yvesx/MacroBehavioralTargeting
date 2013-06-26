@@ -9,7 +9,7 @@
 clear all;
 load bmw_matlab_matrix;
 cv=20;
-num_clst = 2;
+num_clst = 3; %% why using 2 clsts is *much* better than 3 clusters
 dense = double(dense);
 ftr_lst = double(ftr_lst);
 clst = kmeans(dense,num_clst,'distance','cosine','emptyaction','drop');
@@ -30,7 +30,7 @@ for i = 1:cv
     testT = t(:,tr.testInd);
     testY = net(testX);
     testY = round(testY);
-    err_cum = err_cum + sum(abs(testT-testY))/length(testY);
+    err_cum = err_cum + sum(min(abs(testT-testY),1))/length(testY);
 end
 display('mis-classified w/ feedback');
 err_cum/cv
@@ -49,7 +49,7 @@ for i = 1:cv
     testY = round(testY);
 
     
-    err_cum = err_cum + sum(abs(testT-testY))/length(testY);
+    err_cum = err_cum + sum(min(abs(testT-testY),1))/length(testY);
 end
 display('mis-classified w/o feedback');
 err_cum/cv
