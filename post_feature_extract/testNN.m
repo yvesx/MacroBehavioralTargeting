@@ -7,9 +7,9 @@
 %% *feature is sparse
 
 clear all;
-load samsung_matlab_matrix;
-cv=20;
-num_clst = 2; %% why using 2 clsts is *much* better than 3 clusters
+load bmw_matlab_matrix;
+cv=10;
+num_clst = 3; %% why using 2 clsts is *much* better than 3 clusters
 dense = double(dense);
 ftr_lst = double(ftr_lst);
 clst = kmeans(dense,num_clst,'distance','cosine','emptyaction','drop');
