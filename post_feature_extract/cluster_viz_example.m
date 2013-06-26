@@ -1,7 +1,8 @@
 clear all
 close all
 load fisheriris
-load samsung_matlab_matrix
+load bmw_matlab_matrix
+load bmw_cidx_nn
 labelx = '#Shared';
 labely = '#Comments';
 labelz = '#Likes';
@@ -17,45 +18,24 @@ lnsymb = {'b-','r-','m-'};
 
 
 %% three clusters with cosine distance
-[cidxCos,cmeansCos] = kmeans(meas,3,'dist','cos');
-[silhCos,h] = silhouette(meas,cidxCos,'cos');
-for i = 1:3
-    clust = find(cidxCos==i);
-    plot3(meas(clust,1),meas(clust,5),meas(clust,21),ptsymb{i});
-    hold on
-end
-hold off
-xlabel(labelx); ylabel(labely); zlabel(labelz);
-view(-137,10);
-grid on
-figure
+%[cidxCos,cmeansCos] = kmeans(meas,3,'emptyaction','drop');
+[cidxCos,cmeansCos] = kmeans(dense,3,'distance','cosine','emptyaction','drop');
+cidxCos = cidx_nn;
 
-%% thnunder plot
-
-names = {ftr1,ftr2,ftr3,ftr4};
-meas0 = meas ./ repmat(sqrt(sum(meas.^2,2)),1,c);
-ymin = min(min(meas0));
-ymax = max(max(meas0));
-for i = 1:3
-    subplot(1,3,i); plot(meas0(cidxCos==i,:)',lnsymb{i});
-    hold on; plot(cmeansCos(i,:)','k-','LineWidth',2); hold off;
-    title(clstrs(i));
-    set(gca,'Xlim',[.9 4.1],'XTick',1:4,'XTickLabel',names,'YLim',[ymin ymax])
-end
-figure
 
 subplot(1,1,1);
 for i = 1:3
     clust = find(cidxCos==i);
-    plot3(meas(clust,1),meas(clust,2),meas(clust,3),ptsymb{i});
+    h=plot3(meas(clust,1),meas(clust,5),meas(clust,21),ptsymb{i},'MarkerSize', 8);
     hold on
 end
 xlabel(labelx); ylabel(labely); zlabel(labelz);
 view(-137,10);
 grid on
 %sidx = grp2idx(species);
-sidx = kmeans(dense,3,'distance','cosine','emptyaction','drop');miss = find(cidxCos ~= sidx);
-plot3(meas(miss,1),meas(miss,2),meas(miss,3),'k*');
+sidx = kmeans(dense,3,'distance','cosine','emptyaction','drop');
+miss = find(cidxCos ~= sidx);
+plot3(meas(miss,1),meas(miss,5),meas(miss,21),'k*','MarkerSize', 6);
 legend({clstr1,clstr2,clstr3});
 hold off
 figure
