@@ -8,17 +8,13 @@ Publication:
 * A version has been sent to a top Marketing journal for review.
 
 Audience & Problem
-===========
+==================
 
 * **Target audience:** Brand and social media marketers and researchers
 * **Problem:** Marketers spend millions every month to acquire Facebook fans
  * *We spent $30M and acquired 20M FB fans. Now what?* – a major US retailer
 * **Research question:** How to optimally engage one’s fans so that they stay active and retain their value to the brand?
 * FB user => **Fan => Engaged Fan** => Customer
-
-
-
-
 
 Methodology
 ===========
